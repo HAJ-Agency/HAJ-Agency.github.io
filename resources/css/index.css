@@ -18,13 +18,13 @@
     --green: #32b4b9;
     --light-green: #82dcda;
     --dark-green: #148282;
-    --text-black: #1c2e49;
+    --text-dark: #1c2e49;
     --text-white: #fff;
 }
 
 body {
     background-color: var(--bg-white);
-    color: var(--text-black);
+    color: var(--text-dark);
     font-size: 16px;
     line-height: 1.4;
 }
@@ -143,9 +143,38 @@ h5,
 .text-white {
     color: var(--text-white);
 }
-.text-black {
-    color: var(--text-black);
+.text-dark {
+    color: var(--text-dark);
 }
+
+.home-card {
+    border-radius: 20px;
+}
+.home-card .card-body {
+    border-radius: 0 0 20px 20px;
+    padding: 20px 60px 40px 60px;
+}
+.home-card .card-title {
+    max-width: 150px;
+    text-align: left;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: var(--bg-white);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 24px;
+    line-height: 1;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+}
+
+
+
 
 @media screen and (min-width: 992px) {
     body {
