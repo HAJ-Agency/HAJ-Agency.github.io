@@ -177,6 +177,8 @@ h5,
         font-size: 16px;
         font-weight: bold;
     } */
+
+    /* Ship supply page */
     .site-header {
         display: flex;
         justify-content: space-between;
@@ -203,9 +205,6 @@ h5,
         background-color: transparent;
         border: none;
     }
-    .hero-block {
-        position: relative;
-    }
     .harbour {
         width: 100vw;
     }
@@ -213,7 +212,60 @@ h5,
         position: absolute;
         left: 0;
         width: 173px;
-        top: 21px;
+        top: 102px;
     }
+    .info-wrapper {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-white);
+        margin-top: -167px;
+        padding: 60px 100px 100px 100px;
+        width: 800px;
+        height: 770px;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+    .info-wrapper h1 {
+        font-size: 56px;
+    }
+    .info-block {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .blue-list-menu {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        width: 266px;
+        height: 256px;
+        color: var(--text-white);
+    }
+    .list-header {
+       background-color: var(--blue);
+       padding: 17px 24px;
+       font-weight: bold;
+       font-size: 18px;
+    }
+    .info-block {
+        padding-bottom: 100px;
+    }
+    .list-item {
+        background-color: #EDFAFF;
+        padding: 16px 24px;
+        color: var(--blue);
+        font-size: 18px;
+    }
+    .middle-header {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1180A1;
+    }
+    .serve-wrapper {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--blue);
+    }
+    
+    /* Ship supply page */
 
 }
