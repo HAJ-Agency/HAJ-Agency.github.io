@@ -148,6 +148,7 @@ h5,
 @media screen and (min-width: 992px) {
     body {
         font-size: 18px;
+        margin: 0;
     }
 
     /* Font-sizes */
@@ -176,4 +177,43 @@ h5,
         font-size: 16px;
         font-weight: bold;
     } */
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--text-black);
+        height: 81px;
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+    .site-menu {
+        display: flex;
+        align-items: center;
+        color: var(--text-white);
+    }
+    .site-menu ul{
+        display: flex;
+        justify-content: space-evenly;
+        font-weight: bold;
+        color: var(--text-white);
+        list-style: none;
+        width: 500px
+    }
+    .site-menu button {
+        background-color: transparent;
+        border: none;
+    }
+    .hero-block {
+        position: relative;
+    }
+    .harbour {
+        width: 100vw;
+    }
+    .link-ship {
+        position: absolute;
+        left: 0;
+        width: 173px;
+        top: 21px;
+    }
+
 }
