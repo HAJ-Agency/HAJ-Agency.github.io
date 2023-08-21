@@ -182,7 +182,14 @@ h5,
 }
 .floating-box .card-body {
     border-radius: 0 0 20px 20px;
-    padding: 30px;
+    padding: 28px 30px;
+}
+.floating-box .meta-blue {
+    margin-bottom: 8px;
+}
+
+.carousel-item {
+    padding: 0 22px;
 }
 
 @media screen and (max-width: 992px) {
@@ -251,5 +258,9 @@ h5,
 
     .floating-box-right {
         right: 9%;
+    }
+
+    .carousel-section {
+        background-color: var(--grey);
     }
 }
