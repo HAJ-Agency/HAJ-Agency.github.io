@@ -1,6 +1,6 @@
 * {
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.1;
+    line-height: 1.4;
 }
 
 :root {
@@ -26,11 +26,10 @@ body {
     background-color: var(--bg-white);
     color: var(--text-dark);
     font-size: 16px;
-    line-height: 1.4;
 }
 
-section, .section-padding {
-    padding: 48px 0;
+.section-padding {
+    padding: 48px 12px;
 }
 
 /* Font-sizes, mobile first */
@@ -38,8 +37,9 @@ h1,
 .dfs-h1 {
     font-size: 43px;
     font-weight: bold;
-    line-height: 1.15;
+    line-height: 1.14;
     margin: 0 0 15px 0;
+    letter-spacing: -2px;
 }
 
 h2,
@@ -47,6 +47,7 @@ h2,
     font-size: 32px;
     font-weight: bold;
     line-height: 1.15;
+    letter-spacing: -2px;
 }
 
 h3,
@@ -155,7 +156,7 @@ h5,
     padding: 20px 60px 40px 60px;
 }
 .home-card .card-title {
-    max-width: 150px;
+    max-width: 140px;
     text-align: left;
 }
 
@@ -173,15 +174,30 @@ h5,
     color: var(--text-white);
 }
 
+.floating-box  {
+    border-radius: 20px;
+}
+.floating-box img {
+    border-radius: 20px 20px 0 0;
+}
+.floating-box .card-body {
+    border-radius: 0 0 20px 20px;
+    padding: 30px;
+}
 
-
+@media screen and (max-width: 992px) {
+    .small-h1 {
+        font-size: 32px;
+    }
+    
+}
 
 @media screen and (min-width: 992px) {
     body {
         font-size: 18px;
     }
 
-    section, .section-padding {
+    .section-padding {
         padding: 98px 0;
     }
 
@@ -211,4 +227,29 @@ h5,
         font-size: 16px;
         font-weight: bold;
     } */
+
+    .home-card .card-title {
+        max-width: 165px;
+    }
+
+    .overlap-images {
+        max-width: 505px !important;
+    }
+
+    .floating-box-left, .floating-box-right {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        padding: 48px;
+        border-radius: 40px;
+        max-width: 460px;
+    }
+
+    .floating-box-left {
+        left: 9%;
+    }
+
+    .floating-box-right {
+        right: 9%;
+    }
 }
