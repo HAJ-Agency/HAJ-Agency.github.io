@@ -16,12 +16,15 @@
   --red: #aa3417;
   --blue: #00a0dc;
   --light-blue: #64d2ff;
-  --dark-blue: #005078;
+  --dark-blue: #1c2e49;
   --green: #32b4b9;
   --light-green: #82dcda;
   --dark-green: #148282;
   --text-black: #1c2e49;
   --text-white: #fff;
+  --lighter-blue: #EDFAFF;
+  --green-blue: #1180A1;
+  --middle-blue: #005078; 
 }
 
 body {
@@ -42,14 +45,14 @@ h1,
 
 h2,
 .dfs-h2 {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: bold;
   line-height: 1.15;
 }
 
 h3,
 .dfs-h3 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.15;
 }
@@ -137,6 +140,14 @@ h5,
   background-color: var(--dark-green);
 }
 
+.bg-lighter-blue {
+  background-color: var(--lighter-blue);
+}
+
+.bg-middle-blue {
+  background-color: var(--middle-blue);
+}
+
 /* Classes for text-colors */
 .text-white {
   color: var(--text-white);
@@ -144,8 +155,17 @@ h5,
 .text-black {
   color: var(--text-black);
 }
+.text-blue {
+  color: var(--blue);
+}
+.text-light-blue {
+  color: var(--light-blue);
+}
+.text-blue-green {
+  color: var(--green-blue);
+}
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   body {
       font-size: 18px;
       margin: 0;
@@ -154,7 +174,7 @@ h5,
   /* Font-sizes */
   h1,
   .dfs-h1 {
-      font-size: 69px;
+      font-size: 56px;
   }
 
   h2,
@@ -164,7 +184,8 @@ h5,
 
   h3,
   .dfs-h3 {
-      font-size: 32px;
+      font-size: 18px;
+      font-weight: bold;
   }
 
   h4,
@@ -172,148 +193,86 @@ h5,
       font-size: 24px;
   }
 
-  /* h5,
-  .dfs-h5 {
-      font-size: 16px;
-      font-weight: bold;
-  } */
+  /* Custom CSS */
 
-  /* Ship supply page */
-  .site-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--text-black);
-      height: 81px;
-      padding-left: 53px;
-      padding-right: 53px;
-  }
-  .site-menu {
-      display: flex;
-      align-items: center;
-      color: var(--text-white);
-  }
-  .site-menu ul{
-      display: flex;
-      justify-content: space-evenly;
-      font-weight: bold;
-      color: var(--text-white);
-      list-style: none;
-      width: 500px
-  }
-  .site-menu button {
-      background-color: transparent;
-      border: none;
-  }
-  .harbour {
-      width: 100vw;
-  }
   .link-ship {
-      position: absolute;
-      left: 0;
-      width: 173px;
-      top: 102px;
+    top: 21px;
+    left: 0;
   }
-  .info-wrapper {
-      display: flex;
-      flex-direction: column;
-      background-color: var(--bg-white);
-      margin-top: -167px;
-      padding: 60px 100px 100px 100px;
-      width: 800px;
-      height: 770px;
-      border-radius: 20px;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+  .overlap-h3 {
+    top: 120px;
   }
-  .info-wrapper h1 {
-      font-size: 56px;
+
+  .float-box {
+    margin-top: -100px;
+    z-index: 2;
+    border-radius: 20px;
   }
-  .info-block {
-      display: flex;
-      justify-content: space-evenly;
+
+  .border-rounded {
+    border-radius: 20px;
   }
-  .blue-list-menu {
-      display: flex;
-      flex-direction: column;
-      list-style: none;
-      width: 266px;
-      height: 256px;
-      color: var(--text-white);
+
+  .float-border {
+    margin-top: -55px;
   }
-  .list-header {
-     background-color: var(--blue);
-     padding: 17px 24px;
-     font-weight: bold;
-     font-size: 18px;
+
+  .no-show-desktop {
+    display: none !important;
   }
-  .info-block {
-      padding-bottom: 100px;
-  }
-  .list-item {
-      background-color: #EDFAFF;
-      padding: 16px 24px;
-      color: var(--blue);
-      font-size: 18px;
-  }
-  .middle-header {
-      font-size: 18px;
-      font-weight: bold;
-      color: #1180A1;
-  }
-  .serve-wrapper {
-      display: flex;
-      justify-content: space-between;
-      background-color: var(--blue);
-  }
-  .serve-info-wrapper {
-      padding: 94px 51px 93px 119px;
-  }
-  .serve-info-wrapper button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 193px;
-      height: 51px;
-      border-radius: 5px;
-      border: none;
-      margin-top: 50px;
-  }
-  .serve-info-wrapper button img{
-      padding-left: 9px;
-  }
-  .serve-info-wrapper button p{
-      font-size: 18px;
-      font-weight: bold;
-      color: var(--text-black);
-      text-decoration: none;
-  }
-  .serve-info-wrapper p {
-      text-decoration: underline;
-      color: var(--text-black);
-      font-size: 18px;
-      font-weight: bold;
-  }
-  .serve-info-wrapper h1{
-      color: white;
-      font-size: 56px;
-      font-weight: bold;
-      margin-bottom: 51px;
-  }
-  .our-services-wrapper {
-      position: relative;
-      background-color: var(--dark-blue);
-  }
-  .our-services-wrapper img{
-      margin-top: -55px;
-      z-index: 1;
-  }
-  .our-services-wrapper h3 {
-      color: var(--light-blue);
-      position: absolute;
-      top: 10;
-      z-index: 2;
-  }
-  
-  /* Ship supply page */
 
 }
+
+  /* Mobile settings */
+
+  @media screen and (max-width: 768px) {
+    .mobile-flex-smaller {
+      display: flex;
+      flex-direction: column;
+      width: 100vw !important;
+      }
+      .border-rounded {
+        border-radius: 20px;
+      }
+      .link-ship {
+        top: 21px;
+        left: 0;
+      }
+      .no-show-mobile {
+        display: none !important;
+      }
+      .float-box {
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+      }
+      .info-boxes {
+        width: 100%;
+        padding: 20px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+      }
+      .info-box-mobile-wrapper {
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+      }
+      .overlap-h3 {
+        display: none;
+      }
+  }
+
+  @media screen and (max-width: 1250px) {
+    .mobile-flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .image-width-mobile {
+      width: 100% !important;
+    }
+  }
