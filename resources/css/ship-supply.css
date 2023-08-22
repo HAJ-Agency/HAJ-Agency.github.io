@@ -1,0 +1,319 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+}
+
+/* delete comment  */
+
+:root {
+  --bg-white: #fff;
+  --grey: #eef0ef;
+  --light-grey: #f5f6f5;
+  --dark-grey: #c8d0cd;
+  --blue-grey: #8299a0;
+  --orange: #f0571e;
+  --peach: #fabe9b;
+  --red: #aa3417;
+  --blue: #00a0dc;
+  --light-blue: #64d2ff;
+  --dark-blue: #005078;
+  --green: #32b4b9;
+  --light-green: #82dcda;
+  --dark-green: #148282;
+  --text-black: #1c2e49;
+  --text-white: #fff;
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--text-black);
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Font-sizes, mobile first */
+h1,
+.dfs-h1 {
+  font-size: 43px;
+  font-weight: bold;
+  line-height: 1.15;
+  margin: 0 0 15px 0;
+}
+
+h2,
+.dfs-h2 {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+h3,
+.dfs-h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+h4,
+.dfs-h4 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+h5,
+.dfs-h5 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.15;
+}
+
+.meta-blue {
+  color: var(--blue);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.meta-grey {
+  color: var(--blue-grey);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Classes for background-colors */
+.bg-white {
+  background-color: var(--bg-white);
+}
+
+.bg-light-grey {
+  background-color: var(--light-grey);
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+
+.bg-dark-grey {
+  background-color: var(--dark-grey);
+}
+
+.bg-blue-grey {
+  background-color: var(--blue-grey);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-peach {
+  background-color: var(--peach);
+}
+
+.bg-red {
+  background-color: var(--red);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
+.bg-dark-green {
+  background-color: var(--dark-green);
+}
+
+/* Classes for text-colors */
+.text-white {
+  color: var(--text-white);
+}
+.text-black {
+  color: var(--text-black);
+}
+
+@media screen and (min-width: 992px) {
+  body {
+      font-size: 18px;
+      margin: 0;
+  }
+
+  /* Font-sizes */
+  h1,
+  .dfs-h1 {
+      font-size: 69px;
+  }
+
+  h2,
+  .dfs-h2 {
+      font-size: 40px;
+  }
+
+  h3,
+  .dfs-h3 {
+      font-size: 32px;
+  }
+
+  h4,
+  .dfs-h4 {
+      font-size: 24px;
+  }
+
+  /* h5,
+  .dfs-h5 {
+      font-size: 16px;
+      font-weight: bold;
+  } */
+
+  /* Ship supply page */
+  .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--text-black);
+      height: 81px;
+      padding-left: 53px;
+      padding-right: 53px;
+  }
+  .site-menu {
+      display: flex;
+      align-items: center;
+      color: var(--text-white);
+  }
+  .site-menu ul{
+      display: flex;
+      justify-content: space-evenly;
+      font-weight: bold;
+      color: var(--text-white);
+      list-style: none;
+      width: 500px
+  }
+  .site-menu button {
+      background-color: transparent;
+      border: none;
+  }
+  .harbour {
+      width: 100vw;
+  }
+  .link-ship {
+      position: absolute;
+      left: 0;
+      width: 173px;
+      top: 102px;
+  }
+  .info-wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-white);
+      margin-top: -167px;
+      padding: 60px 100px 100px 100px;
+      width: 800px;
+      height: 770px;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+  .info-wrapper h1 {
+      font-size: 56px;
+  }
+  .info-block {
+      display: flex;
+      justify-content: space-evenly;
+  }
+  .blue-list-menu {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      width: 266px;
+      height: 256px;
+      color: var(--text-white);
+  }
+  .list-header {
+     background-color: var(--blue);
+     padding: 17px 24px;
+     font-weight: bold;
+     font-size: 18px;
+  }
+  .info-block {
+      padding-bottom: 100px;
+  }
+  .list-item {
+      background-color: #EDFAFF;
+      padding: 16px 24px;
+      color: var(--blue);
+      font-size: 18px;
+  }
+  .middle-header {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1180A1;
+  }
+  .serve-wrapper {
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--blue);
+  }
+  .serve-info-wrapper {
+      padding: 94px 51px 93px 119px;
+  }
+  .serve-info-wrapper button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 193px;
+      height: 51px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 50px;
+  }
+  .serve-info-wrapper button img{
+      padding-left: 9px;
+  }
+  .serve-info-wrapper button p{
+      font-size: 18px;
+      font-weight: bold;
+      color: var(--text-black);
+      text-decoration: none;
+  }
+  .serve-info-wrapper p {
+      text-decoration: underline;
+      color: var(--text-black);
+      font-size: 18px;
+      font-weight: bold;
+  }
+  .serve-info-wrapper h1{
+      color: white;
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 51px;
+  }
+  .our-services-wrapper {
+      position: relative;
+      background-color: var(--dark-blue);
+  }
+  .our-services-wrapper img{
+      margin-top: -55px;
+      z-index: 1;
+  }
+  .our-services-wrapper h3 {
+      color: var(--light-blue);
+      position: absolute;
+      top: 10;
+      z-index: 2;
+  }
+  
+  /* Ship supply page */
+
+}
