@@ -221,6 +221,23 @@ h5,
     display: none !important;
   }
 
+  .burger-menu {
+    top: 0;
+    right: 0;
+    z-index: 999999;
+  }
+
+  .mobile-menu-dfs {
+    max-width: 30vw !important;
+    z-index: 3000;
+  }
+
+  .backdrop {
+    background: transparent !important;
+    top: 0 !important;
+    z-index: 3;
+  }
+
 }
 
   /* Mobile settings */
@@ -267,9 +284,15 @@ h5,
       .burger-menu {
         top: 0;
         right: 0;
+        z-index: 999999;
       }
       .less-padding {
         padding: 20px !important;
+      }
+      .backdrop {
+        background: transparent !important;
+        top: 0 !important;
+        z-index: 2;
       }
   }
 
