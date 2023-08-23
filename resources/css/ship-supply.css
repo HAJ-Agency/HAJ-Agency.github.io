@@ -60,7 +60,6 @@ h3,
 h4,
 .dfs-h4 {
   font-size: 18px;
-  font-weight: bold;
   line-height: 1.15;
 }
 
@@ -196,7 +195,7 @@ h5,
   /* Custom CSS */
 
   .link-ship {
-    top: 21px;
+    top: 100px;
     left: 0;
   }
 
@@ -236,7 +235,7 @@ h5,
         border-radius: 20px;
       }
       .link-ship {
-        top: 21px;
+        bottom: 21px;
         left: 0;
       }
       .no-show-mobile {

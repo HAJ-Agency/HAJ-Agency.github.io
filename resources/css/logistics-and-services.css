@@ -61,7 +61,6 @@ h3,
 h4,
 .dfs-h4 {
   font-size: 18px;
-  font-weight: bold;
   line-height: 1.15;
 }
 
@@ -207,8 +206,9 @@ h5,
   /* Custom CSS */
 
   .link-ship {
-    top: 21px;
+    top: 100px;
     left: 0;
+    width: 113px;
   }
 
   .overlap-h3 {
@@ -233,6 +233,11 @@ h5,
     display: none !important;
   }
 
+  /* .mobile-menu-dfs {
+    top: 100px;
+    left: 100px;
+  } */
+
 }
 
   /* Mobile settings */
@@ -247,7 +252,7 @@ h5,
         border-radius: 20px;
       }
       .link-ship {
-        top: 21px;
+        bottom: 21px;
         left: 0;
         width: 113px;
       }
