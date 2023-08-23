@@ -1,0 +1,58 @@
+.partner-hero {
+    background-image: url("../img/decor/red-link-small.svg"),
+        url("../img/photos/partner-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: 0% 100%, 100% 100%;
+    height: 37vh;
+}
+
+.square-image-lg {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .less-padding {
+        padding: 48px 12px !important;
+    }
+
+    .mobile-flex-smaller {
+        display: flex;
+        flex-direction: column;
+        width: 100vw !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+    .partner-hero {
+        background-size: 201px 201px, cover;
+        background-position: -1% 10%, 100% 100%;
+        height: 100vh;
+    }
+
+    .hero-title {
+        max-width: 50%;
+    }
+
+    .square-image-lg {
+        height: 543px;
+        /* width: 700px; */
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .mobile-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .image-width-mobile {
+        width: 100% !important;
+    }
+
+}
