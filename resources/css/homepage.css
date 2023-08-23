@@ -1,0 +1,46 @@
+.homepage-hero {
+    background-color: var(--text-dark);
+}
+
+.homepage-hero .mobile-bg-image-wrapper {
+    height: 30vh;
+    position: relative;
+}
+
+.homepage-hero .mobile-bg-image-wrapper .position-absolute {
+    z-index: 20;
+    bottom: 0;
+    left: 0;
+    height: 250px;
+}
+
+.homepage-hero .text-container {
+    margin-top: 87px;
+    height: 75%;
+} 
+
+
+@media screen and (min-width: 992px) {
+    .homepage-hero {
+        background-image: url('../img/decor/hero-blue-cover.svg'), url('../img/photos/homepage-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: auto 100%, cover;
+    }
+
+    .homepage-hero .text-container {
+        margin-top: 0;
+        height: 100%;
+    }
+
+    .homepage-hero .text-container .text-wrapper {
+        max-width: 564px;
+    }
+}
+
+@media  screen and (min-width: 1700px) {
+    .homepage-hero .text-container {
+        max-width: 1656px;
+
+    }
+}
+    
