@@ -13,17 +13,26 @@
         
         <link rel="stylesheet" href="resources/css/global.css" />
         <link rel="stylesheet" href="resources/css/index.css" />
+        <link rel="stylesheet" href="resources/css/homepage.css" />
+        <link rel="stylesheet" href="resources/css/footer.css" />
         <title>DFS AB</title>
     </head>
-    <body class="vh-100">
-        <section
-            class="homepage-hero h-25"
-            style="background-color: var(--dark-blue)"
-        >
-            <h1>HERO TBA...</h1>
+    <body class="">
+        <section class="homepage-hero vh-100 text-white ">
+            <div class="mobile-bg-image-wrapper d-lg-none">
+                <img src="resources/img/photos/homepage-hero.jpg" class="w-100 h-100">
+                <img src="resources/img/decor/home-hero-link.svg" class="position-absolute">
+            </div>
+            <div class="text-container container mx-auto d-flex flex-column justify-content-lg-center">
+                <div class="text-wrapper">
+                    <h1>The link between land and sea</h1>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                    <a href="" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
+                </div>
+            </div>
         </section>
 
-        <section class="section-padding text-lg-center">
+        <section id="colored-panels" class="section-padding text-lg-center">
             <div class="container mx-auto">
                 <div class="row pb-4 pb-lg-5">
                     <p class="meta-grey">our services</p>
@@ -70,9 +79,7 @@
                                     Duis aute irure dolor in reprehenderit in
                                     voluptate
                                 </p>
-                                <a href="" class="text-start btn card-btn mt-3"
-                                    >Låt oss berätta</a
-                                >
+                                <a href="" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
                             </div>
                         </div>
                     </div>
@@ -108,9 +115,7 @@
                                     Duis aute irure dolor in reprehenderit in
                                     voluptate
                                 </p>
-                                <a href="" class="text-start btn card-btn mt-3"
-                                    >Låt oss berätta</a
-                                >
+                                <a href="" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
                             </div>
                         </div>
                     </div>
@@ -146,9 +151,9 @@
                                     Duis aute irure dolor in reprehenderit in
                                     voluptate
                                 </p>
-                                <a href="" class="text-start btn card-btn mt-3"
-                                    >Låt oss berätta</a
-                                >
+                                <a href="" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between"
+                                    >Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -156,14 +161,14 @@
             </div>
         </section>
 
-        <section class="section-padding bg-grey">
+        <section id="our-services" class="section-padding bg-grey">
             <div class="container mx-auto">
                 <div class="row gy-4 gx-5">
-                    <div class="col-lg">
-                        <img
-                            src="/resources/img/photos/overlapping-square-images.png"
-                            class="w-100 overlap-images"
-                        />
+                    <div class="col-lg position-relative d-block overlap-wrapper">
+                        <img src="/resources/img/photos/man-in-white-hat-w-rope.png" class="top-right-img position-absolute"/>
+                        <div class="bottom-left-img image-border position-absolute">
+                            <img src="/resources/img/photos/man-in-yellow-hat-warehouse.png" class=" "/>
+                        </div>
                     </div>
                     <div class="col-lg">
                         <p class="meta-blue">our services</p>
@@ -190,8 +195,8 @@
             </div>
         </section>
 
-        <!-- MOBILE SECTION: A -->
-        <section class="section-padding d-lg-none">
+        <!-- MOBILE SECTION: Our team -->
+        <section id="team-mobile" class="section-padding d-lg-none">
             <div class="container mx-auto">
                 <div class="row gy-3">
                     <div class="col-12">
@@ -238,8 +243,8 @@
             </div>
         </section>
 
-        <!-- DESKTOP SECTION: A -->
-        <section class="section-padding d-none d-lg-block">
+        <!-- DESKTOP SECTION: Our team -->
+        <section id="team-desktop" class="section-padding d-none d-lg-block">
             <div class="container mx-auto">
                 <div class="row pb-4 pb-lg-5 position-relative">
                     <div class="col-4">
@@ -281,7 +286,7 @@
             </div>
         </section>
 
-        <section class="section-padding carousel-section text-center">
+        <section id="carousel-section" class="carousel-section section-padding text-center">
             <div class="container">
                 <div class="row">
                     <p class="meta-blue">Our customers</p>
@@ -315,6 +320,9 @@
                 </div>
             </div>
         </section>
+
+        
+        
 
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
