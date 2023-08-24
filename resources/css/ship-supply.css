@@ -231,6 +231,30 @@ h5,
   .hover-par:hover {
     color: var(--orange) !important;
   }
+  .btn-white {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    width: 150px;
+    }
+.btn-white:hover {
+    background-color: var(--text-dark);
+    color: var(--text-white);
+}
+    .btn-white:hover span svg path {
+        stroke: var(--text-white);
+    }
+    .btn-blue {
+        background-color: #00a0dc;
+        color: var(--text-white);
+        width: 150px;
+        }
+    .btn-blue:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+    }
+        .btn-blue:hover span svg path {
+            stroke: var(--text-dark);
+        }
 }
 
 /* Mobile settings */
