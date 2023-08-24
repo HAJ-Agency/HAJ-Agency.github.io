@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="resources/css/homepage.css" />
         <link rel="stylesheet" href="resources/css/footer.css" />
         <link rel="stylesheet" href="/resources/css/ship-supply.css">
+        <link rel="stylesheet" href="resources/css/slider.css">
         <title>DFS AB</title>
     </head>
     <body class="">
@@ -345,35 +346,66 @@
         </section>
 
         <section id="carousel-section" class="carousel-section section-padding text-center">
-            <div class="container">
-                <div class="row">
+            <div class="container mx-auto text-center my-3">
+                <div class="row mb-4 mb-lg-5">
                     <p class="meta-blue">Our customers</p>
                 </div>
-                <div class="row">
-                    <div id="logo-carousel" class="carousel slide">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active w-auto">
-                                <img
-                                    src="/resources/img/icons/ex-logo.png"
-                                    class="d-block w-100"
-                                    alt="Company 1"
-                                />
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div id="logoCarousel" class="carousel slide" >
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item w-auto">
-                                <img
-                                    src="/resources/img/icons/ex-logo.png"
-                                    class="d-block w-100"
-                                    alt="Company 2"
-                                />
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
                             </div>
-                            <div class="carousel-item w-auto">
-                                <img
-                                    src="/resources/img/icons/ex-logo.png"
-                                    class="d-block w-100"
-                                    alt="Company 3"
-                                />
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2">
+                                    <div class="card">
+                                        <div class="card-img">
+                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-2 justify-content-center">
+                                    <div class="card ">
+                                        <div class="card-img">
+                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <a class="carousel-control-prev bg-transparent w-aut" href="#logoCarousel" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next bg-transparent w-aut" href="#logoCarousel" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -434,5 +466,6 @@
         ></script>
         <script src="resources/js/index.js"></script>
         <script src="resources/js/slider-menu.js"></script>
+        <script src="/resources/js/logo-slider.js"></script>
     </body>
 </html>
