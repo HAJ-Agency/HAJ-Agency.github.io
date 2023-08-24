@@ -146,6 +146,12 @@ h5,
     background-color: var(--middle-blue);
 }
 
+/* Text */
+
+.text-blue {
+    color: var(--blue);
+}
+
 @media screen and (min-width: 768px) {
     /* Custom CSS */
 
@@ -157,7 +163,7 @@ h5,
   
     h2,
     .dfs-h2 {
-        font-size: 40px;
+        font-size: 32px;
     }
   
     h3,
@@ -251,10 +257,17 @@ h5,
     .btn-blue:hover {
         background-color: var(--bg-white);
         color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
         .btn-blue:hover span svg path {
             stroke: var(--text-dark);
         }
+    .list-hover:hover {
+        background-color: var(--grey);
+    }
+    .list-hover:hover a {
+        color: var(--dark-blue);
+    }
 }
 
 /* Mobile settings */
@@ -316,6 +329,31 @@ h5,
     .less-padding {
         padding: 48px 12px !important;
     }
+    .btn-white {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        width: 150px;
+        }
+    .btn-white:hover {
+        background-color: var(--text-dark);
+        color: var(--text-white);
+    }
+        .btn-white:hover span svg path {
+            stroke: var(--text-white);
+        }
+        .btn-blue {
+            background-color: #00a0dc;
+            color: var(--text-white);
+            width: 150px;
+            }
+        .btn-blue:hover {
+            background-color: var(--bg-white);
+            color: var(--text-dark);
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+            .btn-blue:hover span svg path {
+                stroke: var(--text-dark);
+            }
 }
 
 @media screen and (max-width: 1250px) {

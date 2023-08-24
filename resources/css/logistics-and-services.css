@@ -190,7 +190,7 @@ h5,
 
   h2,
   .dfs-h2 {
-      font-size: 40px;
+      font-size: 32px;
   }
 
   h3,
@@ -258,6 +258,26 @@ h5,
   .hover-par:hover {
     color: var(--orange) !important;
   }
+  .list-hover:hover {
+    background-color: var(--grey);
+}
+.list-hover:hover a {
+    color: var(--dark-blue);
+}
+
+.btn-green {
+  background-color: #32b4b9;
+  color: var(--text-white);
+  width: 200px;
+  }
+.btn-green:hover {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+  .btn-green:hover span svg path {
+      stroke: var(--text-dark);
+  }
 
 }
 
@@ -316,6 +336,19 @@ h5,
         top: 0 !important;
         z-index: 2;
       }
+      .btn-green {
+        background-color: #32b4b9;
+        color: var(--text-white);
+        width: 200px;
+        }
+      .btn-green:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+        .btn-green:hover span svg path {
+            stroke: var(--text-dark);
+        }
   }
 
   @media screen and (max-width: 1250px) {
