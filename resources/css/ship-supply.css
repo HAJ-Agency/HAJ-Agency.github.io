@@ -1,7 +1,7 @@
-/* * {
+* {
     font-family: Helvetica, Arial, sans-serif;
-    line-height: 1.1;
-} */
+    /* line-height: 1.1; */
+}
 
 :root {
     --bg-white: #fff;
@@ -53,6 +53,10 @@ h3,
     font-size: 18px;
     font-weight: bold;
     line-height: 1.15;
+}
+
+.index-h3 {
+    font-size: 24px;
 }
 
 h4,
@@ -164,6 +168,10 @@ h5,
     .dfs-h3 {
         font-size: 18px;
         font-weight: bold;
+    }
+
+    .index-h3 {
+        font-size: 32px;
     }
   
     h4,

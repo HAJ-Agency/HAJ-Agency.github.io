@@ -132,6 +132,10 @@ h5,
     background-color: var(--dark-blue);
 }
 
+.bg-midnight {
+    background-color: var(--text-dark);
+}
+
 .bg-green {
     background-color: var(--green);
 }
@@ -345,6 +349,9 @@ h5,
 }
 
 @media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1180px;
+    }
     .overlap-wrapper {
         min-height: 570px;
         width: unset;
@@ -366,6 +373,10 @@ h5,
 }
 
 @media screen and (min-width: 1400px) {
+    .container {
+        max-width: 1380px;
+    }
+
     .top-right-img {
         top: 20px;
         right: 100px;
@@ -374,5 +385,11 @@ h5,
     .bottom-left-img {
         left: 20px;
         bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1456px;
     }
 }
