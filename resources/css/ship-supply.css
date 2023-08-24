@@ -156,6 +156,10 @@ h5,
     color: var(--blue);
 }
 
+.btn {
+    max-width: fit-content;
+}
+
 @media screen and (min-width: 768px) {
     /* Custom CSS */
 
@@ -247,8 +251,7 @@ h5,
   }
   .btn-white {
     background-color: var(--bg-white);
-    color: var(--text-dark);
-    width: 150px;
+    color: var(--text-dark)
     }
 .btn-white:hover {
     background-color: var(--text-dark);
@@ -260,7 +263,6 @@ h5,
     .btn-blue {
         background-color: #00a0dc;
         color: var(--text-white);
-        width: 150px;
         }
     .btn-blue:hover {
         background-color: var(--bg-white);
@@ -340,7 +342,6 @@ h5,
     .btn-white {
         background-color: var(--bg-white);
         color: var(--text-dark);
-        width: 150px;
         }
     .btn-white:hover {
         background-color: var(--text-dark);
@@ -352,7 +353,6 @@ h5,
         .btn-blue {
             background-color: #00a0dc;
             color: var(--text-white);
-            width: 150px;
             }
         .btn-blue:hover {
             background-color: var(--bg-white);

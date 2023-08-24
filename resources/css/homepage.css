@@ -9,7 +9,7 @@
 }
 
 .homepage-hero .mobile-bg-image-wrapper .position-absolute {
-    z-index: 20;
+    z-index: 2;
     bottom: 0;
     left: 0;
     height: 250px;
