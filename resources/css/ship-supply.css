@@ -30,7 +30,7 @@
 body {
     background-color: var(--bg-white);
     color: var(--text-dark);
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.4;
 }
 
@@ -151,6 +151,28 @@ h5,
 @media screen and (min-width: 768px) {
     /* Custom CSS */
 
+
+    h1,
+    .dfs-h1 {
+        font-size: 56px;
+    }
+  
+    h2,
+    .dfs-h2 {
+        font-size: 40px;
+    }
+  
+    h3,
+    .dfs-h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+  
+    h4,
+    .dfs-h4 {
+        font-size: 24px;
+    }
+
     .link-ship {
         /* top: 21px; */
         top: 100px;
@@ -196,9 +218,21 @@ h5,
     z-index: 3;
   }
 
-    .no-show-desktop {
-        display: none !important;
-    }
+  .no-show-desktop {
+      display: none !important;
+  }
+
+  .hover-ship:hover {
+    color: var(--blue) !important;
+  }
+
+  .hover-log:hover {
+    color: var(--green) !important;
+  }
+  
+  .hover-par:hover {
+    color: var(--orange) !important;
+  }
 }
 
 /* Mobile settings */

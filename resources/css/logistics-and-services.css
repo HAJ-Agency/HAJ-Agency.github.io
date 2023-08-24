@@ -244,12 +244,19 @@ h5,
     max-width: 30vw !important;
     z-index: 3000;
   }
-
-
   .backdrop {
     background: transparent !important;
     top: 0 !important;
     z-index: 3;
+  }
+  .hover-ship:hover {
+    color: var(--blue) !important;
+  }
+  .hover-log:hover {
+    color: var(--green) !important;
+  }
+  .hover-par:hover {
+    color: var(--orange) !important;
   }
 
 }
