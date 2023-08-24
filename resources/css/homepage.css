@@ -1,5 +1,6 @@
 .homepage-hero {
     background-color: var(--text-dark);
+    max-height: 1000px; 
 }
 
 .homepage-hero .mobile-bg-image-wrapper {
