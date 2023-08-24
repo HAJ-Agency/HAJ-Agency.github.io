@@ -42,6 +42,10 @@ h1,
     letter-spacing: -2px;
 }
 
+.large-headline {
+    font-size: 32px;
+}
+
 h2,
 .dfs-h2 {
     font-size: 32px;
@@ -148,6 +152,16 @@ h5,
     color: var(--text-dark);
 }
 
+.text-blue {
+    color: var(--blue);
+}
+.text-light-blue {
+    color: var(--light-blue);
+}
+.text-blue-green {
+    color: var(--green-blue);
+}
+
 .home-card {
     border-radius: 20px;
 }
@@ -191,7 +205,7 @@ h5,
     stroke: var(--text-white);
 }
 
-.floating-box  {
+.floating-box {
     border-radius: 20px;
 }
 .floating-box img {
@@ -221,7 +235,7 @@ h5,
 }
 
 .bottom-left-img {
-    border: 14px solid var(--grey); 
+    border: 14px solid var(--grey);
     bottom: 30px;
     left: -8px;
     border-radius: 60px;
@@ -237,7 +251,6 @@ h5,
     .small-h1 {
         font-size: 32px;
     }
-    
 }
 
 @media screen and (min-width: 992px) {
@@ -254,6 +267,10 @@ h5,
     h1,
     .dfs-h1 {
         font-size: 69px;
+    }
+
+    .large-headline {
+        font-size: 56px;
     }
 
     h2,
@@ -301,10 +318,11 @@ h5,
     .bottom-left-img {
         top: 200px;
         left: 20px;
-        border: 18px solid var(--grey); 
+        border: 18px solid var(--grey);
     }
 
-    .floating-box-left, .floating-box-right {
+    .floating-box-left,
+    .floating-box-right {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
@@ -325,7 +343,6 @@ h5,
         background-color: var(--grey);
     }
 }
-
 
 @media screen and (min-width: 1200px) {
     .overlap-wrapper {
