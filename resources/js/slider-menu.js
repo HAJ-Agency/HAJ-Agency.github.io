@@ -1,13 +1,15 @@
-const burgerButton = document.querySelector('.burger-menu')
+const burgerButtons = document.querySelectorAll('.burger-menu')
 const burgerMenu = document.querySelector('.mobile-menu-dfs')
 const menuContents = document.querySelectorAll('.menu-content')
 const backdrop = document.querySelector('.backdrop')
 
 let toggle = false
 
-burgerButton.addEventListener('click', () => {
-  toggle = !toggle
-  toggleMenu()
+burgerButtons.forEach(burgerButton => {
+  burgerButton.addEventListener('click', () => {
+    toggle = !toggle
+    toggleMenu()
+  })
 })
 
 backdrop.addEventListener('click', () => {
@@ -25,7 +27,7 @@ menuContents.forEach((menuContent) => {
 
 const toggleMenu = () => {
   if(toggle) {
-    burgerMenu.style.top = "80px"
+    burgerMenu.style.top = "92px"
     burgerMenu.style.right = "0px"
     burgerMenu.style.width = "90vw"
     burgerMenu.style.zIndex = "3"
