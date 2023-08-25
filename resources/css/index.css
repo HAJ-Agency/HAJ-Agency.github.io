@@ -21,6 +21,7 @@
     --text-dark: #1c2e49;
     --text-white: #fff;
     --focus-blue: #ccf1ff;
+    --lighter-blue: #edfaff;
 }
 
 body {
@@ -151,6 +152,10 @@ h5,
 
 .bg-focus-blue {
     background-color: var(--focus-blue);
+}
+
+.bg-lighter-blue {
+    background-color: var(--lighter-blue);
 }
 
 /* Classes for text-colors */
