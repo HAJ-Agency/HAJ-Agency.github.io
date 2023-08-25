@@ -268,7 +268,6 @@ h5,
 .btn-green {
   background-color: #32b4b9;
   color: var(--text-white);
-  width: 200px;
   }
 .btn-green:hover {
   background-color: var(--bg-white);
