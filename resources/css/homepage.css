@@ -8,6 +8,10 @@
     position: relative;
 }
 
+.homepage-hero .mobile-bg-image-wrapper img:first-child {
+    object-fit: cover;
+}
+
 .homepage-hero .mobile-bg-image-wrapper .position-absolute {
     z-index: 2;
     bottom: 0;
@@ -26,6 +30,12 @@
     z-index: 200;
 }
 
+@media screen and (min-width: 768px) {
+    .homepage-hero .mobile-bg-image-wrapper {
+        height: 50vh;
+    }
+}
+
 @media (min-width: 995px) and (max-width: 1280px) {
     .homepage-hero h1 {
         font-size: 46px;
@@ -42,6 +52,7 @@
         background-image: url('../img/decor/hero-blue-cover.svg'), url('../img/photos/homepage-hero.jpg');
         background-repeat: no-repeat;
         background-size: auto 100%, cover;
+        background-position: 110% top, 100% 100%;
     }
 
     .homepage-hero .text-container {
@@ -60,6 +71,12 @@
 @media screen  and (min-width: 1200px) {
     .homepage-hero .text-container .text-wrapper p {
         max-width: 439px;
+    }
+}
+
+@media screen  and (min-width: 1270px) {
+    .homepage-hero {
+        background-position: unset;
     }
 }
 
