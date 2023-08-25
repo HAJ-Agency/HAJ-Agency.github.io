@@ -22,6 +22,8 @@
     --text-white: #fff;
     --focus-blue: #ccf1ff;
     --lighter-blue: #edfaff;
+    --green-blue: #1180a1;
+    --middle-blue: #005078;
 }
 
 body {
@@ -156,6 +158,10 @@ h5,
 
 .bg-lighter-blue {
     background-color: var(--lighter-blue);
+}
+
+.bg-middle-blue {
+    background-color: var(--middle-blue);
 }
 
 /* Classes for text-colors */
