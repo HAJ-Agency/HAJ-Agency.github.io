@@ -52,7 +52,6 @@
         background-image: url('../img/decor/hero-blue-cover.svg'), url('../img/photos/homepage-hero.jpg');
         background-repeat: no-repeat;
         background-size: auto 100%, cover;
-        background-position: 110% top, 100% 100%;
     }
 
     .homepage-hero .text-container {
@@ -71,12 +70,6 @@
 @media screen  and (min-width: 1200px) {
     .homepage-hero .text-container .text-wrapper p {
         max-width: 439px;
-    }
-}
-
-@media screen  and (min-width: 1270px) {
-    .homepage-hero {
-        background-position: unset;
     }
 }
 
