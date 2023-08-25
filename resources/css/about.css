@@ -6,7 +6,12 @@
     height: 36.73vh;
 }
 
-
+.about-info .text-box {
+    max-width: 886px;
+}
+.about-info .content-wrapper {
+    max-width: 600px;
+}
 
 
 
@@ -29,11 +34,18 @@
         /* background-image: url(/resources/img/decor/grey-large-link.svg); */
         background-size: cover;
         background-position: 100% 100%;
-        height: 94vh;
+        height: 100vh;
     }
 
     .large-link {
         /* top: -15px; */
         right: 40px;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .large-link {
+        min-width: 100vw;
     }
 }
