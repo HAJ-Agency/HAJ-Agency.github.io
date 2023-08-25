@@ -1,12 +1,3 @@
-/* .partner-hero {
-    background-image: url("../img/decor/red-link-small.svg"),
-        url("../img/photos/partner-hero.jpg");
-    background-repeat: no-repeat;
-    background-size: auto, cover;
-    background-position: 0% 100%, 100% 100%;
-    height: 37vh;
-} */
-
 .partner-hero {
     background-image: url("../img/photos/partner-hero.jpg");
     background-repeat: no-repeat;
@@ -14,7 +5,6 @@
     background-position: 100% 100%;
     height: 36.73vh;
 }
-
 
 .square-image-lg {
     object-fit: cover;
@@ -24,7 +14,6 @@
 
 @media screen and (max-width: 768px) {
     
-
     .less-padding {
         padding: 48px 12px !important;
     }
@@ -34,10 +23,6 @@
         flex-direction: column;
         width: 100vw !important;
     }
-
-    /* .partner-linkship {
-        
-    } */
     
 }
 
@@ -50,22 +35,11 @@
 }
 
 @media screen and (min-width: 992px) {
-    /* .partner-hero {
-        background-size: auto, cover;
-        background-position: 0% 14%, 100% 100%;
-        height: 100vh;
-    } */
-
     .partner-hero {
         background-size: cover;
         background-position: 100% 100%;
         height: 100vh;
     }
-
-    /* .partner-linkship {
-        top: 189px;
-    } */
-    
 
     .hero-title {
         max-width: 50%;
@@ -73,7 +47,6 @@
 
     .square-image-lg {
         height: 543px;
-        /* width: 700px; */
     }
 }
 
