@@ -171,7 +171,6 @@ h5,
 .text-dark {
     color: var(--text-dark);
 }
-
 .text-blue {
     color: var(--blue);
 }
@@ -181,7 +180,9 @@ h5,
 .text-blue-green {
     color: var(--green-blue);
 }
-
+.text-blue-grey {
+    color: var(--blue-grey);
+}
 .home-card {
     border-radius: 20px;
 }
