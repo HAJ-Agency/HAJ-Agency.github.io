@@ -8,6 +8,10 @@
     position: relative;
 }
 
+.homepage-hero .mobile-bg-image-wrapper img:first-child {
+    object-fit: cover;
+}
+
 .homepage-hero .mobile-bg-image-wrapper .position-absolute {
     z-index: 2;
     bottom: 0;
@@ -24,6 +28,12 @@
     background-color: #1C2E4911;
     top:0;
     z-index: 200;
+}
+
+@media screen and (min-width: 768px) {
+    .homepage-hero .mobile-bg-image-wrapper {
+        height: 50vh;
+    }
 }
 
 @media (min-width: 995px) and (max-width: 1280px) {
