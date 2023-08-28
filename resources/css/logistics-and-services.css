@@ -12,7 +12,7 @@
   /* Custom CSS */
 
   .link-ship {
-    top: 100px;
+    top: 35px;
     left: 0;
     width: 113px;
   }
@@ -127,6 +127,13 @@
       flex-direction: column;
       width: 100vw !important;
       }
+      .mobile-flex-smaller-prov {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw !important;
+    }
       .mobile-flex-smaller-global {
         display: flex;
         align-items: center !important;
@@ -231,6 +238,10 @@
       display: flex;
       flex-direction: column-reverse;
     }
+    .mobile-flex-no-rev {
+      display: flex;
+      flex-direction: column;
+  }
     .image-width-mobile {
       width: 100% !important;
     }
