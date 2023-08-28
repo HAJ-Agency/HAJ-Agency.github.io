@@ -8,6 +8,23 @@ footer .btn span {
     max-width: 118px !important;
 }
 
+.offline-box {
+    background-image: url('/resources/img/photos/offline-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1C2E49;
+    opacity: 0.6;
+    top: 0;
+}
+
 @media screen and (min-width: 768px) {
     .link-ship {
         top: 100px;
@@ -242,6 +259,16 @@ footer .btn span {
             height: 37vh;
             width: 100vw !important;
           }
+          .offline-box {
+            background-image: url('/resources/img/photos/offline-background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 362px;
+        }
+        .mobile-text {
+            text-align: left !important; 
+            width: 100% !important;
+        }
 }
 
 @media screen and (max-width: 1250px) {
