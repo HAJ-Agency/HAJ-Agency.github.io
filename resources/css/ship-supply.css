@@ -1,205 +1,32 @@
-* {
-    font-family: Helvetica, Arial, sans-serif;
-    /* line-height: 1.1; */
-}
-
-:root {
-    --bg-white: #fff;
-    --grey: #eef0ef;
-    --light-grey: #f5f6f5;
-    --dark-grey: #c8d0cd;
-    --blue-grey: #8299a0;
-    --orange: #f0571e;
-    --peach: #fabe9b;
-    --red: #aa3417;
-    --blue: #00a0dc;
-    --light-blue: #64d2ff;
-    --dark-blue: #1c2e49;
-    --green: #32b4b9;
-    --light-green: #82dcda;
-    --dark-green: #148282;
-    --text-dark: #1c2e49;
-    --text-white: #fff;
-    --lighter-blue: #edfaff;
-    --green-blue: #1180a1;
-    --middle-blue: #005078;
-}
-
-body {
-    background-color: var(--bg-white);
-    color: var(--text-dark);
-    font-size: 18px;
-    line-height: 1.4;
-}
-
-/* Font-sizes, mobile first */
-h1,
-.dfs-h1 {
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.15;
-    margin: 0 0 15px 0;
-}
-
-h2,
-.dfs-h2 {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 1.15;
-}
-
-h3,
-.dfs-h3 {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.15;
-}
-
-.index-h3 {
-    font-size: 24px;
-}
-
-h4,
-.dfs-h4 {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.15;
-}
-
-h5,
-.dfs-h5 {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.15;
-}
-
-.meta-blue {
-    color: var(--blue);
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.meta-grey {
-    color: var(--blue-grey);
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* Classes for background-colors */
-.bg-white {
-    background-color: var(--bg-white);
-}
-
-.bg-light-grey {
-    background-color: var(--light-grey);
-}
-
-.bg-grey {
-    background-color: var(--grey);
-}
-
-.bg-dark-grey {
-    background-color: var(--dark-grey);
-}
-
-.bg-blue-grey {
-    background-color: var(--blue-grey);
-}
-
-.bg-orange {
-    background-color: var(--orange);
-}
-
-.bg-peach {
-    background-color: var(--peach);
-}
-
-.bg-red {
-    background-color: var(--red);
-}
-
-.bg-blue {
-    background-color: var(--blue);
-}
-
-.bg-light-blue {
-    background-color: var(--light-blue);
-}
-
-.bg-dark-blue {
-    background-color: var(--dark-blue);
-}
-
-.bg-green {
-    background-color: var(--green);
-}
-
-.bg-light-green {
-    background-color: var(--light-green);
-}
-
-.bg-dark-green {
-    background-color: var(--dark-green);
-}
-
-.bg-lighter-blue {
-    background-color: var(--lighter-blue);
-}
-
-.bg-middle-blue {
-    background-color: var(--middle-blue);
-}
-
-/* Text */
-
-.text-blue {
-    color: var(--blue);
-}
-
-.btn {
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 12px 24px;
-    line-height: 1;
-    max-width: fit-content;
-}
+/* Custom CSS for Ship Supply and its subpages */
 
 footer .btn span {
     padding-left: 9px;
 }
 
+.options-imgs {
+    max-width: 118px !important;
+}
+
+.offline-box {
+    background-image: url('/resources/img/photos/offline-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1C2E49;
+    opacity: 0.6;
+    top: 0;
+}
+
 @media screen and (min-width: 768px) {
-    /* Custom CSS */
-
-
-    h1,
-    .dfs-h1 {
-        font-size: 56px;
-    }
-  
-    h2,
-    .dfs-h2 {
-        font-size: 32px;
-    }
-  
-    h3,
-    .dfs-h3 {
-        font-size: 18px;
-        font-weight: bold;
-    }
-
-    .index-h3 {
-        font-size: 32px;
-    }
-  
-    h4,
-    .dfs-h4 {
-        font-size: 24px;
-    }
-
     .link-ship {
-        /* top: 21px; */
         top: 100px;
         left: 0;
     }
@@ -211,6 +38,10 @@ footer .btn span {
     .float-box {
         margin-top: -100px;
         z-index: 2;
+        border-radius: 20px;
+    }
+
+    .float-box-prov {
         border-radius: 20px;
     }
 
@@ -228,7 +59,7 @@ footer .btn span {
 
   .burger-menu {
     top: 0;
-    right: 0;
+    right: 9px;
     z-index: 999999;
   }
 
@@ -258,42 +89,75 @@ footer .btn span {
   .hover-par:hover {
     color: var(--orange) !important;
   }
-  .btn-white {
-    background-color: var(--bg-white);
-    color: var(--text-dark)
-    }
-.btn-white:hover {
-    background-color: var(--text-dark);
+.btn-blue {
+    background-color: #00a0dc;
     color: var(--text-white);
+    }
+.btn-blue:hover {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-    .btn-white:hover span svg path {
-        stroke: var(--text-white);
-    }
-    .btn-blue {
-        background-color: #00a0dc;
-        color: var(--text-white);
-        }
-    .btn-blue:hover {
-        background-color: var(--bg-white);
-        color: var(--text-dark);
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-        .btn-blue:hover span svg path {
-            stroke: var(--text-dark);
-        }
-    .list-hover:hover {
-        background-color: var(--grey);
-    }
-    .list-hover:hover a {
-        color: var(--dark-blue);
-    }
+.btn-blue:hover span svg path {
+    stroke: var(--text-dark);
 }
-
-/* Mobile settings */
+.btn-dark-blue {
+    background-color: #1c2e49;
+    color: var(--text-white);
+    }
+.btn-dark-blue:hover {
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.btn-dark-blue:hover span svg path {
+    stroke: var(--text-dark);
+}
+.list-hover:hover {
+    background-color: var(--grey);
+}
+.list-hover:hover a {
+    color: var(--dark-blue);
+}
+.hero-text-wrapper {
+    top: 100px;
+    left: 50%;
+    right: 50%;
+    white-space: nowrap
+  }
+  .hero-wrapper {
+    background-image: url("../img/photos/ship-supply-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 80vh;
+  }
+  .global-supply-wrapper {
+    background-image: url("../img/photos/crossed-arms-dude-wide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+    height: 80vh;
+  }
+}
 
 @media screen and (max-width: 768px) {
     .mobile-flex-smaller {
         display: flex;
+        flex-direction: column;
+        width: 100vw !important;
+    }
+    .mobile-flex-smaller-prov {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw !important;
+    }
+    .mobile-flex-smaller-global {
+        display: flex;
+        align-items: center !important;
+        justify-content: center;
         flex-direction: column;
         width: 100vw !important;
     }
@@ -308,6 +172,12 @@ footer .btn span {
         display: none !important;
     }
     .float-box {
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .float-box-prov {
         width: 100vw !important;
         box-shadow: none !important;
         padding-left: 5px !important;
@@ -332,7 +202,7 @@ footer .btn span {
     }
     .burger-menu {
         top: 0;
-        right: 0;
+        right: 9px;
         z-index: 999999;
       }
       .less-padding {
@@ -348,35 +218,67 @@ footer .btn span {
     .less-padding {
         padding: 48px 12px !important;
     }
-    .btn-white {
+    .btn-blue {
+        background-color: #00a0dc;
+        color: var(--text-white);
+        }
+    .btn-blue:hover {
         background-color: var(--bg-white);
         color: var(--text-dark);
-        }
-    .btn-white:hover {
-        background-color: var(--text-dark);
-        color: var(--text-white);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
-        .btn-white:hover span svg path {
-            stroke: var(--text-white);
+    .btn-blue:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    .btn-dark-blue {
+        background-color: #1c2e49;
+        color: var(--text-white);
         }
-        .btn-blue {
-            background-color: #00a0dc;
-            color: var(--text-white);
-            }
-        .btn-blue:hover {
-            background-color: var(--bg-white);
-            color: var(--text-dark);
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .btn-dark-blue:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .btn-dark-blue:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    
+        .hero-wrapper {
+            background-image: url("../img/photos/ship-supply-hero.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            height: 37vh;
+            width: 100vw !important;
+          }
+          .global-supply-wrapper {
+            background-image: url("../img/photos/crossed-arms-dude-wide.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            height: 37vh;
+            width: 100vw !important;
+          }
+          .offline-box {
+            background-image: url('/resources/img/photos/offline-background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 362px;
         }
-            .btn-blue:hover span svg path {
-                stroke: var(--text-dark);
-            }
+        .mobile-text {
+            text-align: left !important; 
+            width: 100% !important;
+        }
 }
 
 @media screen and (max-width: 1250px) {
     .mobile-flex {
         display: flex;
         flex-direction: column-reverse;
+    }
+    .mobile-flex-no-rev {
+        display: flex;
+        flex-direction: column;
     }
     .image-width-mobile {
         width: 100% !important;
@@ -392,5 +294,8 @@ footer .btn span {
     }
     .overlap-h3 {
       top: 200px;
+    }
+    .hero-wrapper {
+        height: 100vh;
     }
   }
