@@ -198,6 +198,10 @@ footer .btn span {
         display: flex;
         flex-direction: column-reverse;
     }
+    .mobile-flex-no-rev {
+        display: flex;
+        flex-direction: column;
+    }
     .image-width-mobile {
         width: 100% !important;
     }
