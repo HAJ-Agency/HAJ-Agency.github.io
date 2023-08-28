@@ -24,6 +24,9 @@
     --lighter-blue: #edfaff;
     --green-blue: #1180a1;
     --middle-blue: #005078;
+    --sea-blue:#E6FCFF;  
+    --focus-green: #C7F8FF;
+
 }
 
 body {
@@ -163,6 +166,12 @@ h5,
 .bg-middle-blue {
     background-color: var(--middle-blue);
 }
+.bg-sea-blue {
+    background-color: var(--sea-blue);
+}
+.bg-focus-green {
+    background-color: var(--focus-green);
+}
 
 /* Classes for text-colors */
 .text-white {
@@ -174,6 +183,9 @@ h5,
 .text-blue {
     color: var(--blue);
 }
+.text-green {
+    color: var(--green);
+  }
 .text-light-blue {
     color: var(--light-blue);
 }
@@ -183,6 +195,9 @@ h5,
 .text-blue-grey {
     color: var(--blue-grey);
 }
+.text-light-green {
+    color: var(--light-green);
+  }
 .home-card {
     border-radius: 20px;
 }
