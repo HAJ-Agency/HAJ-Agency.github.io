@@ -1,263 +1,276 @@
+body {
+    overflow-x: hidden;
+}
 .overlay {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #1C2E49;
-  opacity: 0.6;
-  top: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1c2e49;
+    opacity: 0.6;
+    top: 0;
 }
 
 @media screen and (min-width: 768px) {
-  /* Custom CSS */
+    /* Custom CSS */
 
-  .link-ship {
-    top: 35px;
-    left: 0;
-    width: 113px;
-  }
-
-  .overlap-h3 {
-    top: 120px;
-  }
-
-  .float-box {
-    margin-top: -100px;
-    z-index: 2;
-    border-radius: 20px;
-  }
-
-  .border-rounded {
-    border-radius: 20px;
-  }
-
-  .float-border {
-    margin-top: -55px;
-  }
-
-  .no-show-desktop {
-    display: none !important;
-  }
-
-  .burger-menu {
-    top: 0;
-    right: 0;
-    z-index: 999999;
-  }
-
-  .mobile-menu-dfs {
-    max-width: 30vw !important;
-    z-index: 3000;
-  }
-  .backdrop {
-    background: transparent !important;
-    top: 0 !important;
-    z-index: 3;
-  }
-  .hover-ship:hover {
-    color: var(--blue) !important;
-  }
-  .hover-log:hover {
-    color: var(--green) !important;
-  }
-  .hover-par:hover {
-    color: var(--orange) !important;
-  }
-  .list-hover:hover {
-    background-color: var(--grey);
-}
-.list-hover:hover a {
-    color: var(--dark-blue);
-}
-
-.btn-green {
-  background-color: #32b4b9;
-  color: var(--text-white);
-  }
-.btn-green:hover {
-  background-color: var(--bg-white);
-  color: var(--text-dark);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-  .btn-green:hover span svg path {
-      stroke: var(--text-dark);
-  }
-  .hero-text-wrapper {
-    top: 100px;
-    left: 50%;
-    right: 50%;
-    white-space: nowrap
-  }
-
-  .hero-wrapper {
-    background-image: url("../img/photos/logistics-hero.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 74vh;
-  }
-
-  .btn-dark-blue {
-    background-color: #1c2e49;
-    color: var(--text-white);
+    .link-ship {
+        top: 35px;
+        left: 0;
+        width: 113px;
     }
-.btn-dark-blue:hover {
-    background-color: var(--bg-white);
-    color: var(--text-dark);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.btn-dark-blue:hover span svg path {
-    stroke: var(--text-dark);
-}
-.global-supply-wrapper {
-  background-image: url("../img/photos/crossed-arms-dude-wide.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100% 100%;
-  height: 80vh;
+
+    .overlap-h3 {
+        top: 120px;
+    }
+
+    .float-box {
+        margin-top: -100px;
+        z-index: 2;
+        border-radius: 20px;
+    }
+
+    .border-rounded {
+        border-radius: 20px;
+    }
+
+    .float-border {
+        margin-top: -55px;
+    }
+
+    .no-show-desktop {
+        display: none !important;
+    }
+
+    .burger-menu {
+        top: 0;
+        right: 0;
+        z-index: 999999;
+    }
+
+    .mobile-menu-dfs {
+        max-width: 30vw !important;
+        z-index: 3000;
+    }
+    .backdrop {
+        background: transparent !important;
+        top: 0 !important;
+        z-index: 3;
+    }
+    .hover-ship:hover {
+        color: var(--blue) !important;
+    }
+    .hover-log:hover {
+        color: var(--green) !important;
+    }
+    .hover-par:hover {
+        color: var(--orange) !important;
+    }
+    .list-hover:hover {
+        background-color: var(--grey);
+    }
+    .list-hover:hover a {
+        color: var(--dark-blue);
+    }
+
+    .btn-green {
+        background-color: #32b4b9;
+        color: var(--text-white);
+    }
+    .btn-green:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .btn-green:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    .hero-text-wrapper {
+        top: 100px;
+        left: 50%;
+        right: 50%;
+        white-space: nowrap;
+    }
+
+    .hero-wrapper {
+        background-image: url("../img/photos/logistics-hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        height: 74vh;
+    }
+
+    .btn-dark-blue {
+        background-color: #1c2e49;
+        color: var(--text-white);
+    }
+    .btn-dark-blue:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .btn-dark-blue:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    .global-supply-wrapper {
+        background-image: url("../img/photos/crossed-arms-dude-wide.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        height: 80vh;
+    }
 }
 
-}
+/* Mobile settings */
 
-  /* Mobile settings */
-
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .mobile-flex-smaller {
-      display: flex;
-      flex-direction: column;
-      width: 100vw !important;
-      }
-      .mobile-flex-smaller-prov {
+        display: flex;
+        flex-direction: column;
+        width: 100vw !important;
+    }
+    .mobile-flex-smaller-prov {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         width: 100vw !important;
     }
-      .mobile-flex-smaller-global {
+    .mobile-flex-smaller-global {
         display: flex;
         align-items: center !important;
         justify-content: center;
         flex-direction: column;
         width: 100vw !important;
     }
-      .border-rounded {
+    .border-rounded {
         border-radius: 20px;
-      }
-      .link-ship {
+    }
+    .link-ship {
         bottom: 21px;
         left: 0;
         width: 113px;
-      }
-      .no-show-mobile {
+    }
+    .no-show-mobile {
         display: none !important;
-      }
-      .float-box {
+    }
+    .float-box {
         width: 100vw !important;
         box-shadow: none !important;
         padding-left: 5px !important;
         padding-right: 5px !important;
-      }
-      .info-boxes {
+    }
+    .info-boxes {
         width: 100%;
         padding: 20px !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
         margin-top: 10px !important;
         margin-bottom: 20px !important;
-      }
-      .info-box-mobile-wrapper {
+    }
+    .info-box-mobile-wrapper {
         width: 100vw !important;
         box-shadow: none !important;
         padding-left: 5px !important;
         padding-right: 5px !important;
-      }
-      .overlap-h3 {
+    }
+    .overlap-h3 {
         display: none;
-      }
-      .burger-menu {
+    }
+    .burger-menu {
         top: 0;
         right: 0;
         z-index: 999999;
-      }
-      .less-padding {
+    }
+    .less-padding {
         padding: 20px !important;
-      }
-      .backdrop {
+    }
+    .backdrop {
         background: transparent !important;
         top: 0 !important;
         z-index: 2;
-      }
-      .btn-green {
+    }
+    .btn-green {
         background-color: #32b4b9;
         color: var(--text-white);
         width: 200px;
-        }
-      .btn-green:hover {
+    }
+    .btn-green:hover {
         background-color: var(--bg-white);
         color: var(--text-dark);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      }
-        .btn-green:hover span svg path {
-            stroke: var(--text-dark);
-        }
-        .hero-wrapper {
-          background-image: url("../img/photos/logistics-hero.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: 100% 100%;
-          height: 37vh;
-          width: 100vw !important;
-        }
-        .btn-dark-blue {
-          background-color: #1c2e49;
-          color: var(--text-white);
-          }
-      .btn-dark-blue:hover {
-          background-color: var(--bg-white);
-          color: var(--text-dark);
-          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      }
-      .btn-dark-blue:hover span svg path {
-          stroke: var(--text-dark);
-      }
-      .mobile-text {
-        text-align: left !important; 
+    }
+    .btn-green:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    .hero-wrapper {
+        background-image: url("../img/photos/logistics-hero.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        height: 37vh;
+        width: 100vw !important;
+    }
+    .btn-dark-blue {
+        background-color: #1c2e49;
+        color: var(--text-white);
+    }
+    .btn-dark-blue:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .btn-dark-blue:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    .mobile-text {
+        text-align: left !important;
         width: 100% !important;
     }
     .float-box-prov {
-      width: 100vw !important;
-      box-shadow: none !important;
-      padding-left: 5px !important;
-      padding-right: 5px !important;
-  }
-  }
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+}
 
-  @media screen and (max-width: 1250px) {
+@media screen and (min-width: 992px) { 
+  .float-box-prov *:not(h1) {
+      max-width: 80%;
+  }
+  
+  .mb-lg-36px {
+      margin-bottom: 36px !important;
+  }
+}
+
+
+@media screen and (max-width: 1250px) {
     .mobile-flex {
-      display: flex;
-      flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column-reverse;
     }
     .mobile-flex-no-rev {
-      display: flex;
-      flex-direction: column;
-  }
+        display: flex;
+        flex-direction: column;
+    }
     .image-width-mobile {
-      width: 100% !important;
+        width: 100% !important;
     }
     .overlap-h3 {
-      top: 60px;
+        top: 60px;
     }
-  }
+}
 
-  @media screen and (min-width: 1800px) {
+@media screen and (min-width: 1800px) {
     .float-border {
-      min-width: 100vw;
+        min-width: 100vw;
     }
     .overlap-h3 {
-      top: 200px;
+        top: 200px;
     }
     .hero-wrapper {
-      height: 100vh;
-  }
-  }
+        height: 100vh;
+    }
+}

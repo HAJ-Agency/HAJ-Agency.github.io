@@ -1,4 +1,7 @@
 /* Custom CSS for Ship Supply and its subpages */
+body {
+    overflow-x: hidden;
+}
 
 footer .btn span {
     padding-left: 9px;
@@ -6,13 +9,14 @@ footer .btn span {
 
 .options-imgs {
     max-width: 118px !important;
+    margin-bottom: 26px;
 }
 
 .offline-box {
-    background-image: url('/resources/img/photos/offline-background.png');
+    background-image: url("/resources/img/photos/offline-background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 55vh;
+    /* height: 55vh; */
 }
 
 .overlay {
@@ -20,7 +24,7 @@ footer .btn span {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #1C2E49;
+    background: #1c2e49;
     opacity: 0.6;
     top: 0;
 }
@@ -46,99 +50,99 @@ footer .btn span {
     }
 
     .border-rounded {
-        border-radius: 20px;
+        border-radius: 40px;
     }
 
     .float-border {
         margin-top: -55px;
     }
 
-  .no-show-desktop {
-    display: none !important;
-  }
-
-  .burger-menu {
-    top: 0;
-    right: 9px;
-    z-index: 999999;
-  }
-
-  .mobile-menu-dfs {
-    max-width: 30vw !important;
-    z-index: 3000;
-  }
-
-  .backdrop {
-    background: transparent !important;
-    top: 0 !important;
-    z-index: 3;
-  }
-
-  .no-show-desktop {
-      display: none !important;
-  }
-
-  .hover-ship:hover {
-    color: var(--blue) !important;
-  }
-
-  .hover-log:hover {
-    color: var(--green) !important;
-  }
-  
-  .hover-par:hover {
-    color: var(--orange) !important;
-  }
-.btn-blue {
-    background-color: #00a0dc;
-    color: var(--text-white);
+    .no-show-desktop {
+        display: none !important;
     }
-.btn-blue:hover {
-    background-color: var(--bg-white);
-    color: var(--text-dark);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.btn-blue:hover span svg path {
-    stroke: var(--text-dark);
-}
-.btn-dark-blue {
-    background-color: #1c2e49;
-    color: var(--text-white);
+
+    .burger-menu {
+        top: 0;
+        right: 9px;
+        z-index: 999999;
     }
-.btn-dark-blue:hover {
-    background-color: var(--bg-white);
-    color: var(--text-dark);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.btn-dark-blue:hover span svg path {
-    stroke: var(--text-dark);
-}
-.list-hover:hover {
-    background-color: var(--grey);
-}
-.list-hover:hover a {
-    color: var(--dark-blue);
-}
-.hero-text-wrapper {
-    top: 100px;
-    left: 50%;
-    right: 50%;
-    white-space: nowrap
-  }
-  .hero-wrapper {
-    background-image: url("../img/photos/ship-supply-hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 80vh;
-  }
-  .global-supply-wrapper {
-    background-image: url("../img/photos/crossed-arms-dude-wide.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-    height: 80vh;
-  }
+
+    .mobile-menu-dfs {
+        max-width: 30vw !important;
+        z-index: 3000 !important;
+    }
+
+    .backdrop {
+        background: transparent !important;
+        top: 0 !important;
+        z-index: 3;
+    }
+
+    .no-show-desktop {
+        display: none !important;
+    }
+
+    .hover-ship:hover {
+        color: var(--blue) !important;
+    }
+
+    .hover-log:hover {
+        color: var(--green) !important;
+    }
+
+    .hover-par:hover {
+        color: var(--orange) !important;
+    }
+    .btn-blue {
+        background-color: #00a0dc;
+        color: var(--text-white);
+    }
+    .btn-blue:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .btn-blue:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    .btn-dark-blue {
+        background-color: #1c2e49;
+        color: var(--text-white);
+    }
+    .btn-dark-blue:hover {
+        background-color: var(--bg-white);
+        color: var(--text-dark);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .btn-dark-blue:hover span svg path {
+        stroke: var(--text-dark);
+    }
+    .list-hover:hover {
+        background-color: var(--grey);
+    }
+    .list-hover:hover a {
+        color: var(--dark-blue);
+    }
+    .hero-text-wrapper {
+        top: 100px;
+        left: 50%;
+        right: 50%;
+        white-space: nowrap;
+    }
+    .hero-wrapper {
+        background-image: url("../img/photos/ship-supply-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        height: 80vh;
+    }
+    .global-supply-wrapper {
+        background-image: url("../img/photos/crossed-arms-dude-wide.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        height: 80vh;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -162,7 +166,7 @@ footer .btn span {
         width: 100vw !important;
     }
     .border-rounded {
-        border-radius: 20px;
+        border-radius: 40px;
     }
     .link-ship {
         bottom: 21px;
@@ -189,7 +193,7 @@ footer .btn span {
         margin-left: 0 !important;
         margin-right: 0 !important;
         margin-top: 10px !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 20px !important;        
     }
     .info-box-mobile-wrapper {
         width: 100vw !important;
@@ -204,24 +208,23 @@ footer .btn span {
         top: 0;
         right: 9px;
         z-index: 999999;
-      }
-      .less-padding {
+    }
+    .less-padding {
         padding: 20px !important;
-      }
-      .backdrop {
+    }
+    .backdrop {
         background: transparent !important;
         top: 0 !important;
         z-index: 2;
-      }
-  
-    
+    }
+
     .less-padding {
         padding: 48px 12px !important;
     }
     .btn-blue {
         background-color: #00a0dc;
         color: var(--text-white);
-        }
+    }
     .btn-blue:hover {
         background-color: var(--bg-white);
         color: var(--text-dark);
@@ -233,7 +236,7 @@ footer .btn span {
     .btn-dark-blue {
         background-color: #1c2e49;
         color: var(--text-white);
-        }
+    }
     .btn-dark-blue:hover {
         background-color: var(--bg-white);
         color: var(--text-dark);
@@ -242,33 +245,43 @@ footer .btn span {
     .btn-dark-blue:hover span svg path {
         stroke: var(--text-dark);
     }
+
+    .hero-wrapper {
+        background-image: url("../img/photos/ship-supply-hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        height: 37vh;
+        width: 100vw !important;
+    }
+    .global-supply-wrapper {
+        background-image: url("../img/photos/crossed-arms-dude-wide.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 100% 100%;
+        height: 37vh;
+        width: 100vw !important;
+    }
+    .offline-box {
+        background-image: url("/resources/img/photos/offline-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* height: 362px; */
+    }
+    .mobile-text {
+        text-align: left !important;
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    .float-box-prov *:not(h1) {
+        max-width: 80%;
+    }
     
-        .hero-wrapper {
-            background-image: url("../img/photos/ship-supply-hero.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 100% 100%;
-            height: 37vh;
-            width: 100vw !important;
-          }
-          .global-supply-wrapper {
-            background-image: url("../img/photos/crossed-arms-dude-wide.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 100% 100%;
-            height: 37vh;
-            width: 100vw !important;
-          }
-          .offline-box {
-            background-image: url('/resources/img/photos/offline-background.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 362px;
-        }
-        .mobile-text {
-            text-align: left !important; 
-            width: 100% !important;
-        }
+    .mb-lg-36px {
+        margin-bottom: 36px !important;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -286,16 +299,23 @@ footer .btn span {
     .overlap-h3 {
         top: 60px;
     }
-  }
+    .box-columns > div {
+        width: 100%;
+    }
+}
 
-  @media screen and (min-width: 1800px) {
+@media screen and (min-width: 1800px) {
     .float-border {
-      min-width: 100vw;
+        min-width: 98vw;
     }
     .overlap-h3 {
-      top: 200px;
+        top: 200px;
     }
     .hero-wrapper {
         height: 100vh;
     }
-  }
+    .box-columns > div {
+        width: 100%;
+        max-width: 700px;
+    }
+}
