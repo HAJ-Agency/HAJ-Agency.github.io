@@ -11,6 +11,10 @@ body {
     top: 0;
 }
 
+.list-unstyled {
+    margin-top: 75px;
+}
+
 @media screen and (min-width: 768px) {
     /* Custom CSS */
 
@@ -93,7 +97,7 @@ body {
     }
 
     .hero-wrapper {
-        background-image: url("../img/photos/logistics-hero.png");
+        background-image: url("../img/photos/Truck.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100% 100%;
@@ -204,7 +208,7 @@ body {
         stroke: var(--text-dark);
     }
     .hero-wrapper {
-        background-image: url("../img/photos/logistics-hero.png");
+        background-image: url("../img/photos/Truck.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100% 100%;

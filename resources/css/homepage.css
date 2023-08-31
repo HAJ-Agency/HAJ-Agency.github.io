@@ -4,7 +4,7 @@
 }
 
 .homepage-hero .mobile-bg-image-wrapper {
-    height: 30vh;
+    height: 37vh;
     position: relative;
 }
 
@@ -21,13 +21,21 @@
 
 .homepage-hero .text-container {
     margin-top: 87px;
-    height: 75%;
+    height: 53%;
 } 
 
 .home-header {
     background-color: #1C2E4911;
-    top:0;
+    top: 0;
     z-index: 200;
+}
+
+/* Temp fix images card - MB*/
+
+.card-img, .card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 257px;
 }
 
 @media screen and (min-width: 768px) {

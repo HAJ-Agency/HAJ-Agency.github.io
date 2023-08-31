@@ -1,497 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-            crossorigin="anonymous"
-        />
-        
-        <link rel="stylesheet" href="resources/css/index.css" />
-        <link rel="stylesheet" href="resources/css/homepage.css" />
-        <link rel="stylesheet" href="resources/css/footer.css" />
-        <link rel="stylesheet" href="/resources/css/ship-supply.css">
-        <link rel="stylesheet" href="resources/css/slider.css">
-        <title>DFS AB</title>
-    </head>
-    <body class="">
-        <div class="vw-100 vh-100 backdrop position-fixed"></div>
-        <div class="d-flex home-header position-absolute w-100 p-2 pe-5 justify-content-between align-items-center no-show-mobile">
-            <a href="/">
-              <img class="p-2 ps-4" src="/resources/img/icons/dfs-logo.svg" alt="">
-            </a>
-            <ul class="d-flex align-items-center list-unstyled m-0">
-              <li class="p-2 me-3">
-                <a class="text-white text-decoration-none hover-ship" href="/ship-supply.html">Ship supply</a>
-              </li>
-              <li class="p-2 me-3">
-                <a class="text-white text-decoration-none hover-log" href="/logistics-and-services.html">Logistics and services</a>
-              </li>
-              <li class="p-2 me-5">
-                <a class="text-white text-decoration-none hover-par" href="/partner-solutions.html">Partner solutions</a>
-              </li>
-              <li>
-                <img class="burger-menu no-show-mobile" src="/resources/img/icons/burger-menu.svg" alt="">
-              </li>
-            </ul>
-          </div>
-        <section class="homepage-hero vh-100 text-white position-relative">
-            <div class="position-fixed mobile-menu-dfs">
-                <div class="d-flex align-items-center justify-content-between p-3 bg-blue menu-content no-show-desktop">
-                  <h3 class="m-0">
-                    <a class="text-white text-decoration-none" href="/ship-supply.html">Ship supply</a>
-                  </h3>
-                  <img src="/resources/img/icons/plus-expander.png" alt="">
-                </div>
-                <div class="d-flex menu-content align-items-center justify-content-between p-3 bg-green no-show-desktop">
-                  <h3 class="m-0">
-                    <a class="text-white text-decoration-none" href="/ship-supply.html">Logistic and service</a>
-                  </h3>
-                  <img src="/resources/img/icons/plus-expander.png" alt="">
-                </div>
-                <div class="d-flex menu-content align-items-center justify-content-between p-3 bg-orange no-show-desktop">
-                  <h3 class="m-0">
-                    <a class="text-white text-decoration-none" href="/ship-supply.html">Partner solutions</a>
-                  </h3>
-                  <img src="/resources/img/icons/plus-expander.png" alt="">
-                </div>
-                <div class="d-flex menu-content align-items-center p-3 bg-white border-bottom">
-                  <p class="m-0">
-                    <a class="text-decoration-none text-dark" href="">
-                      Product catalouge
-                    </a>
-                  </p>
-                  <img src="/resources/img/icons/plus-expander.png" alt="">
-                </div>
-                <div class="d-flex menu-content align-items-center p-3 bg-white border-bottom">
-                  <p class="m-0">
-                    <a class="text-decoration-none text-dark" href="">
-                      About us
-                    </a>
-                  </p>
-                  <img src="/resources/img/icons/plus-expander.png" alt="">
-                </div>
-                <div class="d-flex menu-content align-items-center p-3 bg-white border-bottom">
-                  <p class="m-0">
-                    <a class="text-decoration-none text-dark" href="">
-                      Contact
-                    </a>
-                  </p>
-                  <img src="/resources/img/icons/plus-expander.png" alt="">
-                </div>
-                <div class="d-flex menu-content align-items-center p-3 bg-white border-bottom">
-                  <p class="m-0">
-                    <a class="text-decoration-none text-dark" href="">
-                      Login
-                    </a>
-                  </p>
-                  <img src="/resources/img/icons/plus-expander.png" alt="">
-                </div>
-                <div class="d-flex menu-content align-items-center p-3 bg-white">
-                  <p class="m-0 pe-1">
-                    <a class="text-decoration-none text-dark" href="">
-                      shipshop.se
-                    </a>
-                  </p>
-                  <a href="">
-                    <img src="/resources/img/icons/target-blank.png" alt="">
-                  </a>
-                </div>
-              </div>
-            <img class="position-fixed burger-menu no-show-desktop" src="/resources/img/icons/burger-menu.svg" alt="">
-            <div class="mobile-bg-image-wrapper d-lg-none">
-                <img src="resources/img/photos/homepage-hero.jpg" class="w-100 h-100">
-                <img src="resources/img/decor/home-hero-link.svg" class="position-absolute">
-            </div>
-            <div class="text-container container mx-auto d-flex flex-column justify-content-lg-center">
-                <div class="text-wrapper">
-                    <h1>The link between <br> land and sea</h1>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <a href="" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
-                </div>
-            </div>
-        </section>
 
-        <section id="colored-panels" class="section-padding text-lg-center">
-            <div class="container mx-auto">
-                <div class="row pb-4 pb-lg-5">
-                    <p class="meta-grey">our services</p>
-                    <h2>Duis aute irure dolor in repre in voluptate esse.</h2>
+<html>
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+<link rel="stylesheet" href="resources/css/index.css" />
+<link rel="stylesheet" href="resources/css/homepage.css" />
+<link rel="stylesheet" href="resources/css/footer.css" />
+<link rel="stylesheet" href="resources/css/ship-supply.css" />
+<link rel="stylesheet" href="resources/css/slider.css" />
+
+<title>
+	AB DFS
+</title>
+
+</head>
+<body class="">
+
+     <div class="vw-100 vh-100 backdrop position-fixed"></div>
+    <div class="d-flex home-header position-absolute w-100 p-2 pe-5 justify-content-between align-items-center no-show-mobile">
+        <a href="/">
+            <img class="p-2 ps-4" src="resources/img/icons/dfs-logo.svg" alt="" />
+        </a>
+        <ul class="d-flex align-items-center list-unstyled m-0">
+            <li class="p-2 me-3">
+                <a class="text-white text-decoration-none hover-ship" href="ship-supply.html">Ship supply</a>
+            </li>
+            <li class="p-2 me-3">
+                <a class="text-white text-decoration-none hover-log" href="logistics-and-services.html">Logistics and services</a>
+            </li>
+            <li class="p-2 me-5">
+                <a class="text-white text-decoration-none hover-par" href="partner-solutions.html">Partner solutions</a>
+            </li>
+            <li>
+                <img class="burger-menu no-show-mobile" src="resources/img/icons/burger-menu.svg" alt="">
+            </li>
+        </ul>
+    </div>
+    <section class="homepage-hero vh-100 text-white position-relative">
+        <div class="position-fixed mobile-menu-dfs">
+            <div class="d-flex align-items-center justify-content-between p-3 bg-blue menu-content no-show-desktop">
+                <h3 class="m-0">
+                    <a class="text-white text-decoration-none" href="ship-supply.html">Ship supply</a>
+                </h3>
+                <img src="resources/img/icons/plus-expander.png" alt="" />
+            </div>
+            <div class="d-flex menu-content align-items-center justify-content-between p-3 bg-green no-show-desktop">
+                <h3 class="m-0">
+                    <a class="text-white text-decoration-none" href="logistics-and-services.html">Logistic and service</a>
+                </h3>
+                <img src="resources/img/icons/plus-expander.png" alt="" />
+            </div>
+            <div class="d-flex menu-content align-items-center justify-content-between p-3 bg-orange no-show-desktop">
+                <h3 class="m-0">
+                    <a class="text-white text-decoration-none" href="partner-solutions.html">Partner solutions</a>
+                </h3>
+                <img src="resources/img/icons/plus-expander.png" alt="" />
+            </div>
+            <div class="d-flex menu-content align-items-center p-3 bg-white border-bottom">
+                <p class="m-0">
+                    <a class="text-decoration-none text-dark" href="#">
+                        Product catalogue
+                    </a>
+                </p>
+                <img src="resources/img/icons/plus-expander.png" alt="" />
+            </div>
+         
+            <div class="d-flex menu-content align-items-center p-3 bg-white border-bottom">
+                <p class="m-0">
+                    <a class="text-decoration-none text-dark" href="CustomerLogin.html">
+                        Login
+                    </a>
+                </p>
+                <img src="resources/img/icons/plus-expander.png" alt="" />
+            </div>
+            <div class="d-flex menu-content align-items-center p-3 bg-white">
+                <p class="m-0 pe-1">
+                    <a class="text-decoration-none text-dark" href="http://www.shipshop.se" target="_blank">
+                        shipshop.se
+                    </a>
+                </p>
+                <a href="">
+                    <img src="resources/img/icons/target-blank.png" alt="" />
+                </a>
+            </div>
+        </div>
+        <img class="position-fixed burger-menu no-show-desktop" src="resources/img/icons/burger-menu.svg" alt="">
+        <div class="mobile-bg-image-wrapper d-lg-none">
+            <img src="resources/img/photos/homepage-hero.jpg" class="w-100 h-100">
+            <img src="resources/img/decor/home-hero-link.svg" class="position-absolute">
+        </div>
+        <div class="text-container container mx-auto d-flex flex-column justify-content-lg-center">
+            <div class="text-wrapper">
+                <h1>The link between <br /> land and sea</h1>
+                <p>Your 24/7 partner for marine supply and services.</p>
+                <!-- temp comment - link to about pgae
+                <a href="" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3" /></svg></span></a>
+                   --> 
+               </div>
+        </div>
+    </section>
+    <section id="colored-panels" class="section-padding text-lg-center">
+        <div class="container mx-auto">
+            <div class="row pb-4 pb-lg-5">
+                <p class="meta-grey">Let’s simplify your maritime supply chain.</p>
+                <h2>Looking for supplies, logistics or a long-term partner solution?</h2>
+                <p>
+                    We are at your service.
+                </p>
+            </div>
+            <div class="row gy-3">
+                <div class="col-lg">
+                    <div class="card home-card text-white">
+                        <div class="img-container">
+                            <img class="card-img-top object-fit-cover"
+                                 src="resources/img/photos/Stock_2.jpg"
+                                 alt="" />
+                        </div>
+                        <div class="card-top d-flex align-items-center"
+                             style="background-color: #005078;">
+                            <img class="pe-3"
+                                 src="resources/img/decor/blue-link-small.svg"
+                                 alt="" />
+                            <h4 class="card-title text-uppercase"
+                                style="max-width: 110px">
+                                Ship supply
+                            </h4>
+                        </div>
+                        <div class="card-content card-body text-start"
+                             style="background-color: #005078;">
+                            <p class="card-text fw-bold">
+                                High quality supplies, delivered with a passion for service.
+                            </p>
+                            <p class="card-text">
+                                At DFS, we take great pride in our comprehensive ship supply services, catering to the diverse needs of…
+                            </p>
+                            <a href="ship-supply.html" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Tell me more<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3" /></svg></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card home-card text-white">
+                        <div class="img-container">
+                            <img class="card-img-top object-fit-cover"
+                                 src="resources/img/photos/logistics-and-service-card.jpg"
+                                 alt="" />
+                        </div>
+                        <div class="card-top bg-dark-green d-flex align-items-center">
+                            <img class="pe-3"
+                                 src="resources/img/decor/green-link-small.svg"
+                                 alt="" />
+                            <h4 class="card-title text-uppercase">
+                                Logistics and service
+                            </h4>
+                        </div>
+                        <div class="card-content card-body text-start bg-dark-green">
+                            <p class="card-text fw-bold">
+                                Flexible solutions at the heart of your supply chain.
+
+                            </p>
+                            <p class="card-text">
+                                Navigating the complex landscape of the maritime industry demands expertise, efficiency, and reliability. At DFS, we excel…
+
+                            </p>
+                            <a href="logistics-and-services.html" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Tell me more<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3" /></svg></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="card home-card text-white">
+                        <div class="img-container">
+                            <img class="card-img-top object-fit-cover"
+                                 src="resources/img/photos/partner-solutions-card.png"
+                                 alt="" />
+                        </div>
+                        <div class="card-top bg-red d-flex align-items-center">
+                            <img class="pe-3"
+                                 src="resources/img/decor/red-link-small.svg"
+                                 alt="" />
+                            <h4 class="card-title text-uppercase">
+                                Partner solutions
+                            </h4>
+                        </div>
+                        <div class="card-content card-body text-start bg-red">
+                            <p class="card-text fw-bold">
+                                Let’s create something amazing - together!
+
+                            </p>
+                            <p class="card-text">
+                                <br />
+                                <br />
+                            </p>
+                            <a href="partner-solutions.html" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">
+                                Tell me more<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3" /></svg></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="our-services" class="section-padding bg-grey">
+        <div class="container mx-auto">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg position-relative d-block overlap-wrapper">
+                    <img src="resources/img/photos/DFS 14.png" class="top-right-img position-absolute" />
+                    <div class="bottom-left-img image-border position-absolute">
+                        <img src="resources/img/photos/DFS 5.png" class=" " />
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <p class="meta-blue">our services</p>
+                    <h2 class="dfs-h1 small-h1">
+                        Sweden’s leading ship supply and service company.
+                    </h2>
                     <p>
-                        Duis aute irure dolor in reprehenderit in voluptate
-                        velit esse
+                       With over 70 years of experience, DFS has established itself as a reliable partner for businesses across various industries.
+                        </p>
+                    <p>
+                       Our comprehensive range of services includes ship supply, logistics and services, and partner solutions. 
+                        </p>
+                    <p>
+                        We are dedicated to optimizing supply chains, streamlining operations, and delivering exceptional customer service.
+                       At DFS, our core values of "Joy," "Reliability," and "Service Passion" guide everything we do. We take pride in finding joy in our work, building trust with our customers, and going the extra mile to provide a higher degree of service than our competitors.
+                       </p>
+                    <p>
+                        While our main market is Europe, we have the capability to arrange deliveries globally. 
+                        </p>
+                    <p>
+                        With a focus on innovation and leveraging cutting-edge technology, we are committed to exceeding customer expectations and driving operational efficiency.
+                       Partner with DFS and experience a seamless logistics experience backed by our expertise, reliability, and customer-centric approach.
+
                     </p>
                 </div>
-
-                <div class="row gy-3">
-                    <div class="col-lg">
-                        <div class="card home-card text-white">
-                            <div class="img-container">
-                                <img
-                                    class="card-img-top object-fit-cover"
-                                    src="/resources/img/photos/ship-supply-card.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div
-                                class="card-top d-flex align-items-center"
-                                style="background-color: #005078;"
-                            >
-                                <img
-                                    class="pe-3"
-                                    src="/resources/img/decor/blue-link-small.svg"
-                                    alt=""
-                                />
-                                <h4
-                                    class="card-title text-uppercase"
-                                    style="max-width: 110px"
-                                >
-                                    Ship supply
-                                </h4>
-                            </div>
-                            <div
-                                class="card-content card-body text-start"
-                                style="background-color: #005078;"
-                            >
-                                <p class="card-text fw-bold">
-                                    Duis aute irure dolor in reprehenderit in
-                                    voluptate
-                                </p>
-                                <p class="card-text">
-                                    Duis aute irure dolor in reprehenderit in
-                                    voluptate
-                                </p>
-                                <a href="/ship-supply.html" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="card home-card text-white">
-                            <div class="img-container">
-                                <img
-                                    class="card-img-top object-fit-cover"
-                                    src="/resources/img/photos/logistics-and-service-card.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div
-                                class="card-top bg-dark-green d-flex align-items-center"
-                            >
-                                <img
-                                    class="pe-3"
-                                    src="/resources/img/decor/green-link-small.svg"
-                                    alt=""
-                                />
-                                <h4 class="card-title text-uppercase">
-                                    Logistics and service
-                                </h4>
-                            </div>
-                            <div
-                                class="card-content card-body text-start bg-dark-green"
-                            >
-                                <p class="card-text fw-bold">
-                                    Duis aute irure dolor in reprehenderit in
-                                    voluptate
-                                </p>
-                                <p class="card-text">
-                                    Duis aute irure dolor in reprehenderit in
-                                    voluptate
-                                </p>
-                                <a href="/logistics-and-services.html" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between">Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg">
-                        <div class="card home-card text-white">
-                            <div class="img-container">
-                                <img
-                                    class="card-img-top object-fit-cover"
-                                    src="/resources/img/photos/partner-solutions-card.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div
-                                class="card-top bg-red d-flex align-items-center"
-                            >
-                                <img
-                                    class="pe-3"
-                                    src="/resources/img/decor/red-link-small.svg"
-                                    alt=""
-                                />
-                                <h4 class="card-title text-uppercase">
-                                    Partner solutions
-                                </h4>
-                            </div>
-                            <div
-                                class="card-content card-body text-start bg-red"
-                            >
-                                <p class="card-text fw-bold">
-                                    Duis aute irure dolor in reprehenderit in
-                                    voluptate
-                                </p>
-                                <p class="card-text">
-                                    Duis aute irure dolor in reprehenderit in
-                                    voluptate
-                                </p>
-                                <a href="/partner-solutions.html" class="text-start btn btn-white card-btn mt-3 d-flex align-items-center justify-content-between"
-                                    >Låt oss berätta<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </section>
-
-        <section id="our-services" class="section-padding bg-grey">
-            <div class="container mx-auto">
-                <div class="row gy-4 gx-5">
-                    <div class="col-lg position-relative d-block overlap-wrapper">
-                        <img src="/resources/img/photos/man-in-white-hat-w-rope.png" class="top-right-img position-absolute"/>
-                        <div class="bottom-left-img image-border position-absolute">
-                            <img src="/resources/img/photos/man-in-yellow-hat-warehouse.png" class=" "/>
+        </div>
+    </section>
+    <!-- MOBILE SECTION: Our team -->
+    <section id="team-mobile" class="section-padding d-lg-none">
+        <div class="container mx-auto">
+            <div class="row gy-3">
+                <div class="col-12">
+                    <div class="card floating-box text-dark">
+                        <div class="img-container">
+                            <img class="card-img-top object-fit-cover"
+                                 src="resources/img/photos/DFS_3.png"
+                                 alt="" />
                         </div>
-                    </div>
-                    <div class="col-lg">
-                        <p class="meta-blue">our services</p>
-                        <h2 class="dfs-h1 small-h1">
-                            Duis aute irure dolor in repre in voluptate esse.
-                        </h2>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est
-                            laborum. Duis aute irure dolor in reprehenderit in
-                            voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia
-                            deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- MOBILE SECTION: Our team -->
-        <section id="team-mobile" class="section-padding d-lg-none">
-            <div class="container mx-auto">
-                <div class="row gy-3">
-                    <div class="col-12">
-                        <div class="card floating-box text-dark">
-                            <div class="img-container">
-                                <img
-                                    class="card-img-top object-fit-cover"
-                                    src="/resources/img/photos/high-vis-group-in-warehouse.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div
-                                class="card-content card-body text-start bg-grey"
-                            >
-                                <p class="meta-blue">Our team</p>
-                                <h3 class="index-h3">
-                                    Service is our top priority irure dolor in
-                                    repre henderit in volup.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="card floating-box text-dark">
-                            <div class="img-container">
-                                <img
-                                    class="card-img-top object-fit-cover"
-                                    src="/resources/img/photos/high-vis-group-in-warehouse.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div
-                                class="card-content card-body text-start bg-grey"
-                            >
-                                <p class="meta-blue">Our team</p>
-                                <h3 class="index-h3">
-                                    Service is our top priority irure dolor in
-                                    repre henderit in volup.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DESKTOP SECTION: Our team -->
-        <section id="team-desktop" class="section-padding d-none d-lg-block">
-            <div class="container mx-auto">
-                <div class="row pb-4 pb-lg-5 position-relative">
-                    <div class="col-4">
-                        <div class="bg-grey floating-box-left">
+                        <div class="card-content card-body text-start bg-grey">
                             <p class="meta-blue">Our team</p>
                             <h3 class="index-h3">
-                                Service is our top priority irure dolor in repre
-                                henderit in volup.
+                                Rely on our dedicated and experienced team help you out, no matter the challenge!
+
                             </h3>
                         </div>
                     </div>
-                    <div class="col-8">
-                        <img
-                            class="img-fluid"
-                            src="/resources/img/photos/high-vis-group-in-warehouse.png"
-                            alt=""
-                        />
-                    </div>
                 </div>
-
-                <div class="row position-relative">
-                    <div class="col-8">
-                        <img
-                            class="img-fluid"
-                            src="/resources/img/photos/duo-in-office-at-night.png"
-                            alt=""
-                        />
-                    </div>
-                    <div class="col-4">
-                        <div class="bg-grey floating-box-right">
-                            <p class="meta-blue">Our team</p>
+                <div class="col-12">
+                    <div class="card floating-box text-dark">
+                        <div class="img-container">
+                            <img class="card-img-top object-fit-cover"
+                                 src="resources/img/photos/DFS_20.png"
+                                 alt="" />
+                        </div>
+                        <div class="card-content card-body text-start bg-grey">
+                            <p class="meta-blue">24/7 Assistance</p>
                             <h3 class="index-h3">
-                                Service is our top priority irure dolor in repre
-                                henderit in volup.
+                               The shipping industry never sleeps, we are here for you whenever you need us.
                             </h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section id="carousel-section" class="carousel-section section-padding text-center">
-            <div class="container mx-auto text-center my-3">
-                <div class="row mb-4 mb-lg-5">
-                    <p class="meta-blue">Our customers</p>
+        </div>
+    </section>
+    <!-- DESKTOP SECTION: Our team -->
+    <section id="team-desktop" class="section-padding d-none d-lg-block">
+        <div class="container mx-auto">
+            <div class="row pb-4 pb-lg-5 position-relative">
+                <div class="col-4">
+                    <div class="bg-grey floating-box-left">
+                        <p class="meta-blue">Our team</p>
+                        <h3 class="index-h3">
+                            Rely on our dedicated and experienced team to help you out, no matter the challenge!
+                        </h3>
+                    </div>
                 </div>
-                <div class="row mx-auto my-auto justify-content-center">
-                    <div id="logoCarousel" class="carousel slide" >
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <div class="col-md-2">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-2">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-2">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-2">
-                                    <div class="card">
-                                        <div class="card-img">
-                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="col-md-2 justify-content-center">
-                                    <div class="card ">
-                                        <div class="card-img">
-                                            <img src="/resources/img/icons/ex-logo.png" class="img-fluid" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev bg-transparent w-aut" href="#logoCarousel" role="button" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        </a>
-                        <a class="carousel-control-next bg-transparent w-aut" href="#logoCarousel" role="button" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        </a>
+                <div class="col-8">
+                    <img class="img-fluid"
+                         src="resources/img/photos/DFS_3.png"
+                         alt="" />
+                </div>
+            </div>
+            <div class="row position-relative">
+                <div class="col-8">
+                    <img class="img-fluid"
+                         src="resources/img/photos/DFS_20.png"
+                         alt="" />
+                </div>
+                <div class="col-4">
+                    <div class="bg-grey floating-box-right">
+                        <p class="meta-blue">24/7 Assistance</p>
+                        <h3 class="index-h3">
+                            The shipping industry never sleeps, we are here for you whenever you need us.
+                        </h3>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+   
+    <footer class="footer text-white text-center">
+        <div class="container-fluid p-0 mx-auto">
+            <div class="d-flex flex-column flex-xl-row justify-content-xl-between">
+                <div class="first-column text-xl-start">
+                    <a href="/"><img src="resources/img/icons/dfs-logo.svg" alt="DFS AB"></a>
+                    <div class="symbols-wrapper d-flex justify-content-center justify-content-xl-start">
+                       <img src="resources/img/icons/ISSA.png" alt="" height="66px;" />
+                        <img src="resources/img/icons/IMPA.png" alt="" height="66px;" />
+                        <img src="resources/img/icons/LinkedIn.png" alt="" height="66px;" />
+                    </div>
+                </div>
+                <div class="secound-column">
+                    <h3 class="footer-headline mt-xl-2">The link between land and sea</h3>
+                    <div class="footer-btn-wrapper d-flex flex-column flex-xl-row align-items-center justify-content-center">
+                        <a href="tel:+4631291435" class="text-start btn btn-white card-btn mt-3 mt-xl-0 me-xl-3 d-flex align-items-center justify-content-between">Call: +46 31 29 14 35<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3" /></svg></span></a>
+                        <a href="mailto:dfs@dfs-ab.se" class="text-start btn btn-white card-btn mt-2 mt-xl-0 d-flex align-items-center justify-content-between">Mail: dfs@dfs-ab.se<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3" /></svg></span></a>
+                    </div>
+                    <!-- DESKTOP TERMS & COPYRIGHT INFO -->
+                    <div class="desktop-footer-info d-none d-xl-block mt-4">
+                        <div class="term-links">
+                            <a href="Policies/DFS_GTCS.pdf" target="_blank" >Terms & conditions</a>
+                            <span>|</span>
+                            <a href="Policies/Integrity%20Policy.pdf" target="_blank">Privacy Policy</a>
+                        </div>
+                        <div class="copyright-text">
+                            <p class="mb-0">© AB DONSÖ FISKEREDSKAP & SKEPPSFURNERING
+                            <script> document.currentScript.insertAdjacentHTML('afterend', '<time datetime="' + new Date().toJSON() + '">' + new Intl.DateTimeFormat(document.documentElement.lang, {year: 'numeric'}).format() + '</time>'); </script></p>
+                        </div>
+                    </div>
+                </div>
 
-        <footer class="footer text-white text-center">
-            <div class="container-fluid p-0 mx-auto">
-                <div class="d-flex flex-column flex-xl-row justify-content-xl-between">
-                    <div class="first-column text-xl-start">
-                        <a href="/"><img src="resources/img/icons/dfs-logo.svg" alt="DFS AB"></a>
-                        <div class="symbols-wrapper d-flex justify-content-center justify-content-xl-start">
-                            <img src="/resources/img/icons/ex-logo.png" alt="" height="66px">
-                            <img src="/resources/img/icons/ex-logo.png" alt="" height="66px">
-                            <img src="/resources/img/icons/ex-logo.png" alt="" height="66px">
+                <div class="third-column d-block">
+                    <!-- MOBILE TERMS & COPYRIGHT INFO -->
+                    <div class="mobile-footer-info d-xl-none mt-4 text-xl-end">
+                        <div class="term-links">
+                            <a href="Policies/DFS_GTCS.pdf" target="_blank" >Terms & conditions</a>
+                            <span>|</span>
+                            <a href="Policies/Integrity%20Policy.pdf" target="_blank">Privacy Policy</a>
                         </div>
-                    </div>
-                    <div class="secound-column">
-                        <h3 class="footer-headline mt-xl-2">Service anywhere, anytime!</h3>
-                        <div class="footer-btn-wrapper d-flex flex-column flex-xl-row align-items-center justify-content-center">
-                            <a href="tel:+4631291435" class="text-start btn btn-white card-btn mt-3 mt-xl-0 me-xl-3 d-flex align-items-center justify-content-between">Call: +46 31 29 14 35<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
-                            <a href="mailto:dfs@dfs-ab.se" class="text-start btn btn-white card-btn mt-2 mt-xl-0 d-flex align-items-center justify-content-between">Mail: dfs@dfs-ab.se<span><svg xmlns="http://www.w3.org/2000/svg" width="10.563" height="18.121" viewBox="0 0 10.563 18.121"><path id="Path_31" data-name="Path 31" d="M-18925-7805l8,8-8,8" transform="translate(18926.061 7806.061)" fill="none" stroke="#1c2e49" stroke-linejoin="round" stroke-width="3"/></svg></span></a>
+                        <div class="copyright-text">
+                            <p class="mb-0">© AB DONSÖ FISKEREDSKAP & SKEPPSFURNERING
+                            <script> document.currentScript.insertAdjacentHTML('afterend', '<time datetime="' + new Date().toJSON() + '">' + new Intl.DateTimeFormat(document.documentElement.lang, {year: 'numeric'}).format() + '</time>'); </script></p>
                         </div>
-                        <!-- DESKTOP TERMS & COPYRIGHT INFO -->
-                        <div class="desktop-footer-info d-none d-xl-block mt-4">
-                            <div class="term-links">
-                                <a href="">Terms & conditions</a>
-                                <span>|</span>
-                                <a href="">Privacy Policy</a>
-                            </div>
-                            <div class="copyright-text">
-                                <p class="mb-0">© AB DONSÖ FISKEREDSKAP & SKEPPSFURNERING <script> document.currentScript.insertAdjacentHTML('afterend', '<time datetime="' + new Date().toJSON() + '">' + new Intl.DateTimeFormat(document.documentElement.lang, {year: 'numeric'}).format() + '</time>'); </script></p>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="third-column d-block">
-                        <!-- MOBILE TERMS & COPYRIGHT INFO -->
-                        <div class="mobile-footer-info d-xl-none mt-4 text-xl-end">
-                            <div class="term-links">
-                                <a href="">Terms & conditions</a>
-                                <span>|</span>
-                                <a href="">Privacy Policy</a>
-                            </div>
-                            <div class="copyright-text">
-                                <p class="mb-0">© AB DONSÖ FISKEREDSKAP & SKEPPSFURNERING <script> document.currentScript.insertAdjacentHTML('afterend', '<time datetime="' + new Date().toJSON() + '">' + new Intl.DateTimeFormat(document.documentElement.lang, {year: 'numeric'}).format() + '</time>'); </script></p>
-                            </div>
-                        </div>       
                     </div>
                 </div>
             </div>
-        </footer>
-        
+        </div>
+    </footer>
+   
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-            crossorigin="anonymous"
-        ></script>
-        <script src="resources/js/index.js"></script>
-        <script src="resources/js/slider-menu.js"></script>
-    </body>
+            crossorigin="anonymous"></script>
+    <script src="resources/js/index.js"></script>
+    <script src="resources/js/slider-menu.js"></script>
+    <script src="resources/js/logo-slider.js"></script>
+
+</body>
 </html>
