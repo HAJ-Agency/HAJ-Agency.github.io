@@ -422,7 +422,7 @@ h5,
     .bottom-left-img {
         left: 20px;
         bottom: 20px;
-    }
+    } 
 }
 
 @media screen and (min-width: 1500px) {
