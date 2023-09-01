@@ -44,9 +44,9 @@ footer .btn span {
     }
 
     .float-box {
-        margin-top: -100px;
+        margin-top: -150px;
         z-index: 2;
-        border-radius: 20px;
+        border-radius: 45px;
     }
 
     .float-box-prov {
@@ -143,7 +143,7 @@ footer .btn span {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100% 100%;
-        height: 80vh;
+        height: 75vh;
     }
     .global-supply-wrapper {
         background-image: url("../img/photos/crossed-arms-dude-wide.png");

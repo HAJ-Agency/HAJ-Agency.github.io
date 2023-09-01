@@ -29,9 +29,9 @@ body {
     }
 
     .float-box {
-        margin-top: -100px;
+        margin-top: -150px;
         z-index: 2;
-        border-radius: 20px;
+        border-radius: 45px;
     }
 
     .border-rounded {
@@ -101,7 +101,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 100% 100%;
-        height: 74vh;
+        height: 75vh;
     }
 
     .btn-dark-blue {
