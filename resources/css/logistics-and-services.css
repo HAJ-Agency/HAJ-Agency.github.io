@@ -21,7 +21,7 @@ body {
     .link-ship {
         top: 35px;
         left: 0;
-        width: 113px;
+        width: 173px;
     }
 
     .overlap-h3 {
@@ -32,6 +32,7 @@ body {
         margin-top: -150px;
         z-index: 2;
         border-radius: 45px;
+        max-width: 948px !important;
     }
 
     .border-rounded {
@@ -275,6 +276,6 @@ body {
         top: 200px;
     }
     .hero-wrapper {
-        height: 100vh;
+        height: 75vh;
     }
 }
