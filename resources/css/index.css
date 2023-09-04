@@ -418,12 +418,12 @@ h5,
         right: 70px;
     }
     .bottom-left-img {
-        bottom: 30px;
-        left: 0px;
+        top: 225px;
+        left: 50px;
     }
     .bottom-left-img-partner {
-        bottom: 30px;
-        left: 0px;
+        top: 225px;
+        left: 50px;
     }
 }
 
@@ -438,11 +438,11 @@ h5,
     }
 
     .bottom-left-img {
-        left: 20px;
+        left: 111px;
         bottom: 20px;
     } 
     .bottom-left-img-partner {
-        left: 20px;
+        left: 111px;
         bottom: 20px;
     } 
 }
@@ -451,4 +451,12 @@ h5,
     .container {
         max-width: 1456px;
     }
+    .bottom-left-img {
+        left: 148px;
+        bottom: 20px;
+    } 
+    .bottom-left-img-partner {
+        left: 148px;
+        bottom: 20px;
+    } 
 }
