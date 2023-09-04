@@ -54,7 +54,7 @@ footer .btn span {
     }
 
     .border-rounded {
-        border-radius: 40px;
+        border-radius: 45px;
     }
 
     .float-border {
@@ -175,7 +175,7 @@ footer .btn span {
         width: 100vw !important;
     }
     .border-rounded {
-        border-radius: 40px;
+        border-radius: 20px;
     }
     .link-ship {
         bottom: 21px;
