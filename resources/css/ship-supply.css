@@ -33,6 +33,10 @@ footer .btn span {
     margin-top: 75px;
 }
 
+.mobile-menu-dfs {
+    z-index: 3000 !important;
+}
+
 @media screen and (min-width: 768px) {
     .link-ship {
         top: 35px;
@@ -45,7 +49,7 @@ footer .btn span {
     }
 
     .float-box {
-        margin-top: -150px;
+        margin-top: -60px;
         z-index: 2;
         border-radius: 45px;
         max-width: 948px !important;
@@ -295,13 +299,10 @@ footer .btn span {
         margin-bottom: 36px !important;
     }
 
-    /* .float-box {
+    .float-box {
         margin-top: -100px;
     }
 
-    .ship-supply-page .float-border {
-        margin-top: -160px;
-    } */
 }
 
 @media screen and (max-width: 1250px) {
@@ -321,6 +322,12 @@ footer .btn span {
     }
     .box-columns > div {
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .float-box {
+        margin-top: -150px;
     }
 }
 
