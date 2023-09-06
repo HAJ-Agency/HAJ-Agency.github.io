@@ -36,7 +36,7 @@
 
 @media screen and (min-width: 1200px) {
     .footer {
-        padding: 42px 0 0px 53px;
+        padding: 42px 0 0px 0px;
         background-image: url(../img/decor/footer-grey-link.svg);
         background-repeat: no-repeat;
         background-position: bottom right;        
@@ -71,6 +71,20 @@
 
     .third-column {
         width: 20%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) and (max-width:1500px) {
+    .padding-left {
+        padding-left: 55px;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+
+    .footer .container-fluid {
+        width: 1756px;
     }
     
 }

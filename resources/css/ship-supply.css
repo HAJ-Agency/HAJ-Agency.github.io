@@ -194,14 +194,14 @@ footer .btn span {
     .float-box {
         width: 100vw !important;
         box-shadow: none !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .float-box-prov {
         width: 100vw !important;
         box-shadow: none !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .info-boxes {
         width: 100%;
@@ -214,8 +214,8 @@ footer .btn span {
     .info-box-mobile-wrapper {
         width: 100vw !important;
         box-shadow: none !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
     .overlap-h3 {
         display: none;
@@ -319,7 +319,7 @@ footer .btn span {
         width: 100% !important;
     }
     .overlap-h3 {
-        top: 60px;
+        top: 70px;
     }
     .box-columns > div {
         width: 100%;
@@ -388,5 +388,17 @@ footer .btn span {
 
     .max-width {
         max-width: 1200px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .info-box-mobile-wrapper {
+        padding-right: 35px;
+    }
+    .float-box {
+        padding-left: 35px;
+    }
+    .large-headline {
+        padding-left: 40px;
     }
 }
