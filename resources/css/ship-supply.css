@@ -161,6 +161,7 @@ footer .btn span {
 }
 
 @media screen and (max-width: 768px) {
+
     .mobile-flex-smaller {
         display: flex;
         flex-direction: column;
@@ -329,14 +330,18 @@ footer .btn span {
     .float-box {
         margin-top: -150px;
     }
+
+    .controll-width {
+        width: 90% !important;
+    }
 }
 
 @media screen and (min-width: 1800px) {
     .float-border {
-        min-width: 98vw;
+        width: 85%;
     }
     .overlap-h3 {
-        top: 200px;
+        top: 160px;
     }
     .hero-wrapper {
         height: 75vh;
@@ -344,5 +349,44 @@ footer .btn span {
     .box-columns > div {
         width: 100%;
         max-width: 700px;
+    }
+    .max-width {
+        max-width: 700px !important;
+    }
+    .controll-width {
+        width: 75% !important;
+    }
+    .shorter-headline-wrapper {
+        display: flex;
+        justify-content: end;
+    }
+    .shorter-headline-wrapper h2 {
+       width: 75%;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .float-border {
+        width: 80%;
+    }
+    .overlap-h3 {
+        top: 200px;
+    }
+    .max-width {
+        max-width: 850px !important;
+    }
+}
+
+@media screen and (min-width: 2700px) {
+    .float-border {
+        width: 85%;
+    }
+    
+    .overlap-h3 {
+        top: 280px;
+    }
+
+    .max-width {
+        max-width: 1200px !important;
     }
 }
