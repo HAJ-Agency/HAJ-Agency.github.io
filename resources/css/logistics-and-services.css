@@ -134,6 +134,7 @@ body {
 /* Mobile settings */
 
 @media screen and (max-width: 768px) {
+
     .mobile-flex-smaller {
         display: flex;
         flex-direction: column;
@@ -236,6 +237,7 @@ body {
         width: 100% !important;
     }
 
+
 }
 
 @media screen and (min-width: 992px) {
@@ -250,6 +252,11 @@ body {
     .float-box {
         margin-top: -100px;
     }
+    
+    .wider {
+        width: 50vw !important;
+    }
+
 }
 
 @media screen and (min-width: 1250px) {
