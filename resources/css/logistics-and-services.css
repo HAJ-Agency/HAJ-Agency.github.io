@@ -15,6 +15,15 @@ body {
     margin-top: 75px;
 }
 
+.max-width {
+    max-width: 700px;
+}
+
+.max-width-content {
+    max-width: 1456px;
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     /* Custom CSS */
 
@@ -41,10 +50,6 @@ body {
 
     .float-border {
         margin-top: -55px;
-    }
-
-    .no-show-desktop {
-        display: none !important;
     }
 
     .burger-menu {
@@ -156,9 +161,7 @@ body {
         left: 0;
         width: 113px;
     }
-    .no-show-mobile {
-        display: none !important;
-    }
+
     .float-box {
         width: 100vw !important;
         box-shadow: none !important;
@@ -232,12 +235,7 @@ body {
         text-align: left !important;
         width: 100% !important;
     }
-    .float-box-prov {
-        width: 100vw !important;
-        box-shadow: none !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -254,7 +252,19 @@ body {
     }
 }
 
+@media screen and (min-width: 1250px) {
+    .no-show-desktop {
+        display: none !important;
+    }
+}
+
 @media screen and (max-width: 1250px) {
+    .float-box-prov {
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
     .mobile-flex {
         display: flex;
         flex-direction: column-reverse;
@@ -268,6 +278,9 @@ body {
     }
     .overlap-h3 {
         top: 60px;
+    }
+    .no-show-mobile {
+        display: none !important;
     }
 }
 

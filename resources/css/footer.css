@@ -69,6 +69,10 @@
         width: 1456px;
     }
 
+    .footer .container-fluid-small {
+        width: 1456px;
+    }
+
     .third-column {
         width: 20%;
     }
@@ -85,6 +89,10 @@
 
     .footer .container-fluid {
         width: 1756px;
+    }
+
+    .footer .container-fluid-small {
+        width: 1456px;
     }
     
 }
