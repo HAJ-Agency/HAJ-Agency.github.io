@@ -305,9 +305,9 @@ footer .btn span {
 
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1000px) {
     .float-box-ship {
-        margin-left: 200px;
+        margin-left: 150px;
     }
 }
 
