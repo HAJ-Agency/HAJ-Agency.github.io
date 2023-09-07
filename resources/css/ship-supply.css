@@ -295,6 +295,10 @@ footer .btn span {
     .float-box-prov *:not(h1) {
         max-width: 80%;
     }
+
+    .float-box-prov *:not(h1) {
+        max-width: 80%;
+    }
     
     .mb-lg-36px {
         margin-bottom: 36px !important;
@@ -304,6 +308,12 @@ footer .btn span {
         margin-top: -100px;
     }
 
+}
+
+@media screen and (min-width: 1250px) {
+    .float-box-ship {
+        margin-left: 200px;
+    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -351,7 +361,7 @@ footer .btn span {
         max-width: 700px;
     }
     .max-width {
-        max-width: 700px !important;
+        max-width: 787px !important;
     }
     .controll-width {
         width: 75% !important;

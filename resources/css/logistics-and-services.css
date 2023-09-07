@@ -240,6 +240,8 @@ body {
 
 }
 
+/* 137px freight forawrding  */
+
 @media screen and (min-width: 992px) {
     .float-box-prov *:not(h1) {
         max-width: 80%;
@@ -262,6 +264,9 @@ body {
 @media screen and (min-width: 1250px) {
     .no-show-desktop {
         display: none !important;
+    }
+    .float-box-prov {
+        margin-left: 200px;
     }
 }
 
@@ -294,6 +299,11 @@ body {
 @media screen and (min-width: 1300px) {
     .float-box {
         margin-top: -150px;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .less-padding-os {
+        padding: 10px !important;
     }
 }
 
