@@ -33,7 +33,6 @@
     font-size: 18px;
 }
 
-
 @media screen and (min-width: 1200px) {
     .footer {
         padding: 42px 0 0px 0px;
@@ -61,13 +60,13 @@
     .third-column {
         width: 246px;       
     }
+
 }
 
 @media screen and (min-width: 1500px) {
 
     .footer .container-fluid {
-        width: 1700px;
-        padding-left: 55px !important;
+        width: 1456px;
     }
 
     .footer .container-fluid-small {
@@ -75,7 +74,11 @@
     }
 
     .third-column {
-        width: 246px;
+        width: 280px;
+    }
+
+    .small {
+        width: 246px !important;
     }
     
 }
@@ -83,6 +86,9 @@
 @media screen and (min-width: 1200px) and (max-width:1500px) {
     .padding-left {
         padding-left: 55px;
+    }
+    .justify-switch {
+        justify-content: space-evenly !important;
     }
 }
 
