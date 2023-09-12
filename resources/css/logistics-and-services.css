@@ -24,6 +24,8 @@ body {
     width: 100%;
 }
 
+
+  
 @media screen and (min-width: 768px) {
     /* Custom CSS */
 
@@ -288,6 +290,20 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+    .image-container {
+        max-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        overflow: hidden; 
+    }
+      
+    .image-container img {
+        max-width: 100%; 
+        height: auto; 
+        object-fit: cover; 
+        object-position: top center; 
+    }
     .mobile-flex-no-rev {
         display: flex;
         flex-direction: column;
