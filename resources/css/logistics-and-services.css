@@ -15,10 +15,6 @@ body {
     margin-top: 75px;
 }
 
-.max-width {
-    max-width: 700px;
-}
-
 .max-width-content {
     max-width: 1456px;
     width: 100%;
@@ -36,7 +32,7 @@ body {
     }
 
     .overlap-h3 {
-        top: 120px;
+        top: 92px;
     }
 
     .float-box {
@@ -159,12 +155,7 @@ body {
         width: 113px;
     }
 
-    .float-box {
-        width: 100vw !important;
-        box-shadow: none !important;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
-    }
+
     .info-boxes {
         width: 100%;
         padding: 20px !important;
@@ -242,7 +233,9 @@ body {
     /* .float-box-prov *:not(h1) {
         max-width: 80%;
     } */
-
+    .no-show-desktop {
+        display: none !important;
+    }
     .mb-lg-36px {
         margin-bottom: 36px !important;
     }
@@ -254,16 +247,16 @@ body {
     .wider {
         width: 50vw !important;
     }
+    .max-width {
+        max-width: 787px;
+    }
 
 }
 
 @media screen and (min-width: 1250px) {
-    .no-show-desktop {
-        display: none !important;
-    }
-    .float-box-prov {
+     .float-box-prov {
         margin-left: 200px;
-    }
+    } 
 }
 
 @media screen and (max-width: 1250px) {
@@ -273,23 +266,38 @@ body {
         padding-left: 5px !important;
         padding-right: 5px !important;
     }
-    .mobile-flex {
-        display: flex;
-        flex-direction: column-reverse;
-    }
- 
-    .image-width-mobile {
-        width: 100% !important;
-    }
     .overlap-h3 {
-        top: 60px;
-    }
-    .no-show-mobile {
-        display: none !important;
+        top: 70px;
     }
 }
 
 @media screen and (max-width: 992px) {
+    
+    .no-show-mobile {
+        display: none !important;
+    }
+    .info-box-mobile-wrapper {
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .mobile-flex-smaller {
+        display: flex;
+        flex-direction: column;
+        width: 100vw !important;
+    }
+    .float-box {
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin-top: 0px !important;
+    }
+    .mobile-flex {
+        display: flex;
+        flex-direction: column-reverse;
+    }
     .image-container {
         max-height: 500px;
         display: flex;
@@ -297,12 +305,24 @@ body {
         align-items: flex-start;
         overflow: hidden; 
     }
-      
+    .float-border { 
+        display: none !important;
+    }
     .image-container img {
         max-width: 100%; 
         height: auto; 
         object-fit: cover; 
         object-position: top center; 
+    }
+    .image-width-mobile {
+        width: 100% !important;
+    }
+    .float-box {
+        width: 100vw !important;
+        box-shadow: none !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin-top: 0px !important;
     }
     .mobile-flex-no-rev {
         display: flex;
@@ -321,9 +341,18 @@ body {
 
 }
 
+@media screen and (min-width: 1000px) {
+    .float-box-ship {
+        margin-left: 150px;
+    }
+}
+
 @media screen and (min-width: 1300px) {
     .float-box {
         margin-top: -150px;
+    }
+    .controll-width {
+        width: 90% !important;
     }
 }
 @media screen and (max-width: 1400px) {
@@ -340,12 +369,68 @@ body {
 
 @media screen and (min-width: 1800px) {
     .float-border {
-        min-width: 100vw;
+        width: 85%;
+    }
+    .overlap-h3 {
+        top: 160px;
+    }
+    .hero-wrapper {
+        height: 75vh;
+    }
+    .max-width {
+        max-width: 787px !important;
+    }
+    .controll-width {
+        width: 75% !important;
+    }
+    .shorter-headline-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+    }
+    .shorter-headline-wrapper h2 {
+       width: 75%;
+    }
+    .shorter-headline-wrapper p {
+        width: 75%;
+     }
+     .shorter-headline-wrapper div {
+        width: 70%;
+     }
+}
+
+@media screen and (min-width: 2300px) {
+    .float-border {
+        width: 80%;
     }
     .overlap-h3 {
         top: 200px;
     }
-    .hero-wrapper {
-        height: 75vh;
+    .max-width {
+        max-width: 850px !important;
+    }
+}
+
+@media screen and (min-width: 2700px) {
+    .float-border {
+        width: 85%;
+    }
+    
+    .overlap-h3 {
+        top: 280px;
+    }
+
+    .max-width {
+        max-width: 1200px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .info-box-mobile-wrapper {
+        padding-right: 35px;
+    }
+    .float-box {
+        padding-left: 35px;
     }
 }
