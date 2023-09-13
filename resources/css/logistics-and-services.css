@@ -178,9 +178,7 @@ body {
         right: 0;
         z-index: 999999;
     }
-    .less-padding {
-        padding: 20px !important;
-    }
+ 
     .backdrop {
         background: transparent !important;
         top: 0 !important;
@@ -272,7 +270,9 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-    
+    .less-padding {
+        padding: 20px !important;
+    }
     .no-show-mobile {
         display: none !important;
     }
