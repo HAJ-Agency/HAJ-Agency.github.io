@@ -50,12 +50,8 @@
 }
 
 @media screen and (max-width: 1250px) {
-    .mobile-flex {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .image-width-mobile {
-        width: 100% !important;
+    .less-padding {
+        padding: 20px !important;
     }
 
 }
