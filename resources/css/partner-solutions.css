@@ -56,6 +56,12 @@
 
 }
 
+@media screen and (max-width: 1350px) {
+    .smaller {
+        font-size: 40px;
+    }
+}
+
 @media screen and (min-height: 800px) {
     .partner-hero {
         background-position: 100% 25%;
