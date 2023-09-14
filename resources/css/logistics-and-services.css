@@ -19,7 +19,12 @@ body {
     max-width: 1456px;
     width: 100%;
 }
-
+.hero-text-wrapper {
+    top: 100px;
+    left: 50%;
+    right: 50%;
+    white-space: nowrap;
+}
 
   
 @media screen and (min-width: 768px) {
@@ -93,13 +98,6 @@ body {
     .btn-green:hover span svg path {
         stroke: var(--text-dark);
     }
-    .hero-text-wrapper {
-        top: 100px;
-        left: 50%;
-        right: 50%;
-        white-space: nowrap;
-    }
-
     .hero-wrapper {
         background-image: url("../img/photos/Truck.jpg");
         background-repeat: no-repeat;
@@ -132,7 +130,12 @@ body {
 /* Mobile settings */
 
 @media screen and (max-width: 768px) {
-
+    .hero-text-wrapper {
+        top: 128px;
+    }
+    .hero-text-wrapper p {
+        margin-bottom: 0px;
+    }
     .mobile-flex-smaller {
         display: flex;
         flex-direction: column;
@@ -150,9 +153,9 @@ body {
         border-radius: 20px;
     }
     .link-ship {
-        bottom: 21px;
         left: 0;
         width: 113px;
+        top: 7px;
     }
 
 

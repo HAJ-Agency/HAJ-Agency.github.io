@@ -42,6 +42,13 @@ footer .btn span {
     width: 100%;
 }
 
+.hero-text-wrapper {
+    top: 100px;
+    left: 50%;
+    right: 50%;
+    white-space: nowrap;
+}
+
 @media screen and (min-width: 768px) {
     .link-ship {
         top: 35px;
@@ -130,12 +137,6 @@ footer .btn span {
     .list-hover:hover a {
         color: var(--dark-blue);
     }
-    .hero-text-wrapper {
-        top: 100px;
-        left: 50%;
-        right: 50%;
-        white-space: nowrap;
-    }
     .hero-wrapper {
         background-image: url("../img/photos/ship-supply-hero.jpg");
         background-repeat: no-repeat;
@@ -153,6 +154,12 @@ footer .btn span {
 }
 
 @media screen and (max-width: 768px) {
+    .hero-text-wrapper {
+        top: 128px;
+    }
+    .hero-text-wrapper p {
+        margin-bottom: 0px;
+    }
 
     .mobile-flex-smaller {
         display: flex;
@@ -171,10 +178,9 @@ footer .btn span {
         border-radius: 20px;
     }
     .link-ship {
-        bottom: 21px;
         left: 0;
+        top: 7px;
     }
-
     .float-box {
         width: 100vw !important;
         box-shadow: none !important;
